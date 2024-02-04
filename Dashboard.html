@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://js.stripe.com/v3/"></script>
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="stuffs.css">
+<link rel="stylesheet" href="./css/Style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+</head>
+<body>
+ <header class=" bg-success w3-card">
+<div class="container content">
+<!-- 
+  <div class="address">
+    <i class="fa fa-map-marker"></i>
+    <p>4301 Crestridge Dr, Round Rock, TX 78681</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="address">
+    <i class="fa fa-clock-o"></i>
+    <p>Mon - Sat   9:00AM - 5:00PM</p>
+  </div>
+  <div class="divider"></div> -->
+<div class="address">
+   <img src="./images/users.png" alt="">
+    <p id="name"></p>
+
+    
+  </div>
+</div>
+  <div class="socials w3-hide-medium w3-hide-small w3-hide-large">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+
+  </div>
+ </header>
+<nav class="navbar navbar-expand-lg bg-body-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="./images/logo.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item animated-line">
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link" href="./About.html">About Us</a>
+        </li>
+        <li class="nav-item animated-line dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="toggle" aria-expanded="false">
+            Our Services
+          </a>
+          <ul class="dropdown-menu" id="item">
+            <li><a class="dropdown-item" href="details.html?cardId=card2">Senior Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card1">Assisted Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card3">Memory Care</a></li>
+            
+          </ul>
+        </li>
+     
+        <li class="nav-item animated-line">
+          <a class="nav-link"  href="./FAQ.html" >FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#" >Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+       
+      <a href="" class="btn btn-success" id="logout">Logout</button></a>
+     
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section class="dashboard">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- <h3>Dashboard</h3> -->
+        <button class="btn btn-success mt-2"   onclick="document.getElementById('id01').style.display='block'" >Update profile</button>
+        
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" >
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="./images/logo.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="">
+        <div class="w3-section">
+           <div class="">
+      <label for="exampleFormControlInput1" class="form-label"><b> Choose a service</b></label>
+ <select class="form-select" id="service" name="Choice" aria-label="Default select example">
+  <option><b>Select</b></option>
+  <option value="Senior Living">Senior Living</option>
+  <option value="Assisted Living">Assisted Living</option>
+  <option value="Memory Care">Memory Care</option>
+</select>
+</div>
+           <div class="mt-2">
+      <label for="exampleFormControlInput1" class="form-label"><b>Duration</b> </label>
+ <select class="form-select" id="duration" name="Choice" aria-label="Default select example">
+  <option>Select</option>
+  <option value="1 Month">1 Month</option>
+
+</select>
+</div>
+          <label><b>Phone Number</b></label>
+          <input class="form-control" id="num" type="number" placeholder="Phone" required>
+          <label><b>Expected Start Date</b></label>
+          <input class="form-control" id="dater" type="date" placeholder="Enter start date" required>
+          <button class="w3-button  w3-block w3-green w3-section w3-padding" id="save" type="submit">Update</button>
+    
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+     <p class="w3-right w3-padding w3-hide-small">Call <a href="tel:+15127735821">+15127735821</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="dash mt-5">
+     
+    <div class="container-fluid dashp" >
+     
+      <div class="dashs">
+        <h3>Profile Details</h3>
+        <h6><b> Name:</b> <span id="named"></span> </h6>
+        <h6><b> Email:</b> <span id="emmail"></span> </h6>
+        <h6><b>Tel: </b><span id="tel"></span> </h6>
+        <h6><b>Service: </b><span id="ser"></span> </h6>
+        <h6><b>Duration: </b><span id="dur"></span> </h6>
+        <h6><b>Start Date: </b><span id="sd"></span> </h6>
+        <h6><b>Expected End Date: </b><span id="sds"></span></h6>
+        
+
+      </div>
+       <div class="dashs2" style="height: 300px; padding: 30px;">
+        <div class="dashead">
+          <h3 id="ser2"></h3>
+       <h6 id="price"></h3>
+
+        </div>
+        <div class="totals">
+         <h6>Total</h6>
+       <h1 id="total"></h1>
+      <button class="btn btn-dark w-100 mt-3" id="checkout">Pay</button>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+      </div>
+     
+      <div class="col-md-4 cal">
+        <h1>Add Schedule Reminder</h1>
+          <div id="calendar" class="mb-3"></div>
+           <h1>Your Schedule</h1>
+          <div id="eventsList" class="mt-3 w3-border w3-padding">
+ 
+                                     
+          </div>
+         <div class="modal fade" id="createEventModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add a Schedule</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form for creating a new event -->
+          <form id="createEventForm">
+            <div class="mb-3">
+              <label for="eventTitle" class="form-label">Schedule Title</label>
+              <input type="text" class="form-control" id="eventTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="eventDate" class="form-label">Schedule Date</label>
+              <input type="text" class="form-control" id="eventDate" readonly>
+            </div>
+       
+            <!-- Add more form fields as needed -->
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+    <script src="./jquery-3.7.js"></script>
+     <script src="./moment.js"></script>
+    <script src='fullcalendar/dist/index.global.js'></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+     <script src="./app.js"></script>
+
+
+     <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+     import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail,  signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+   import {getDatabase, set, get, update, remove, push, ref, child} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAQgGNtM-rMDVqtIf0hM25KiTauxO8SMvM",
+    authDomain: "a-touch-of-home.firebaseapp.com",
+    projectId: "a-touch-of-home",
+    database: "https://a-touch-of-home-default-rtdb.firebaseio.com/",
+    storageBucket: "a-touch-of-home.appspot.com",
+    messagingSenderId: "318456681019",
+    appId: "1:318456681019:web:4d55f308d84738bee9821e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+ const auth = getAuth(app);
+    const db = getDatabase(app);
+    const databaseRef = ref(db);
+
+
+       const logoutEl = document.getElementById("logout");
+  
+
+
+     
+        const nameEl = document.getElementById("name");	    
+        const emailEl = document.getElementById("email");	    
+        const passwordEl = document.getElementById("password");	    
+
+       
+
+
+      
+   
+      const logout = document.getElementById("logout");
+      const saveEl = document.getElementById("save");
+
+      const user = auth.currentUser;
+  
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in
+          let memPrice = 4000;
+          let asstPrice = 4000;
+          let senPrice = 5000;
+   
+          // Format prices with commas
+let formattedMemPrice = memPrice.toLocaleString('en-US', { style: 'decimal' });
+let formattedAsstPrice = asstPrice.toLocaleString('en-US', { style: 'decimal' });
+let formattedSenPrice = senPrice.toLocaleString('en-US', { style: 'decimal' });
+         let priceEl = document.getElementById("price");
+         let totalEl = document.getElementById("total");
+     
+ 
+
+          const uid = user.uid;
+
+          const userRef = ref(db, "Clients/" + uid);
+          get(userRef)
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                const userData = snapshot.val();
+                const names = userData.Firstname;
+                const namesL = userData.Lastname;
+                const emailsL = userData.Email;
+                const telsL = userData.phone;
+                const serviceEL = userData.service;
+                const service2EL = userData.service;
+                const startEL = userData.startDate;
+                const durationsEl = userData.duration;
+           
+                     let totalMemPrice = memPrice * parseInt(durationsEl);
+                     let totalAsstPrice = asstPrice * parseInt(durationsEl);
+                     let totalSenPrice = senPrice * parseInt(durationsEl);
+          
+                 const startDate = moment(userData.startDate);
+                 const durationInMonths = parseInt(durationsEl);
+                 const endDate = moment(startDate).add(durationInMonths, 'months');
+                 const formattedStartDate = startDate.format('YYYY-MM-DD');
+                  const formattedEndDate = endDate.format('YYYY-MM-DD');
+               
+                console.log("User Data:", userData);
+             
+                // Update the UI with the user's name
+                const nameeEl = document.getElementById("name");
+                const nameesEl = document.getElementById("named");
+                const emmEl = document.getElementById("emmail");
+                const telEl = document.getElementById("tel");
+                const serEl = document.getElementById("ser");
+                const ser2El = document.getElementById("ser2");
+                const sdEl = document.getElementById("sd");
+                const sdsEl = document.getElementById("sds");
+                const durEl = document.getElementById("dur");
+       
+                nameeEl.textContent = "Hi, " + names;
+                nameesEl.textContent = namesL + " " + names;
+                emmEl.textContent = emailsL;
+                telEl.textContent = telsL;
+                serEl.textContent = serviceEL;
+                ser2El.textContent = service2EL;
+                sdEl.textContent = formattedStartDate;
+                sdsEl.textContent = formattedEndDate;
+                durEl.textContent = durationsEl;
+
+                 if (serviceEL === "Memory Care") {
+            priceEl.innerHTML = "$" + formattedMemPrice  + " / monthly";
+                    totalEl.innerHTML = "$" + totalMemPrice.toLocaleString('en-US', { style: 'decimal' })
+          } else if (serviceEL === "Assisted Living") {
+            priceEl.innerHTML = "$" +  formattedAsstPrice + " / monthly";
+              totalEl.innerHTML = "$" + totalAsstPrice.toLocaleString('en-US', { style: 'decimal' })
+          } else if(serviceEL === "Senior Living"){
+            priceEl.innerHTML = "$" + formattedSenPrice  + " / monthly";
+              totalEl.innerHTML = "$" + totalSenPrice.toLocaleString('en-US', { style: 'decimal' })
+          }
+          
+              } else {
+                console.log("User data not found");
+              }
+            })
+            .catch((error) => {
+              console.log("Error retrieving user data:", error);
+            });
+        } else {
+          // User is signed out
+          // ...
+        }
+
+
+
+       
+ const uid = user.uid;
+    const eventsRef =  ref(db, `Clients/${uid}/Events`);
+   
+    // Fetch events associated with the user from the database
+    console.log('Before fetching events');
+    get(eventsRef)
+        .then((snapshot) => {
+         console.log(snapshot.exists());
+            if (snapshot.exists()) {
+                const eventsData = snapshot.val();
+                       console.log("Snapshot Data:", eventsData);
+               console.log('Events Data:', eventsData)
+             
+                // Check if eventsData is an object
+                if (typeof eventsData === 'object' && eventsData !== null) {
+                    // Assuming you have an element with the id 'eventsList' in your HTML
+                    const eventsList = document.getElementById('eventsList');
+                    console.log(eventsList);
+                    
+                    
+                    // Clear any existing events
+                    eventsList.innerHTML = '';
+
+                    for (const eventId in eventsData) {
+                        const event = eventsData[eventId];
+                        const eventRap = document.createElement('div')
+                        const Rap = document.createElement('div')
+                        const deleteButton = document.createElement('img')
+                        Rap.id = eventId;
+                        deleteButton.src="./images/del.png"
+                        deleteButton.style.width='13px';
+                        deleteButton.style.cursor = "pointer"
+                        Rap.classList.add('rap')
+                        const eventTitle = document.createElement('h6');
+                        const eventPara = document.createElement('p');
+                        eventTitle.textContent = event.title; // Assuming event has a 'title' property
+                        eventPara.textContent = event.date; // Assuming event has a 'title' property
+                        eventsList.appendChild(Rap);
+                        Rap.appendChild(eventRap)
+                        Rap.appendChild(deleteButton)
+                        eventRap.appendChild(eventTitle);
+                        eventRap.appendChild(eventPara);
+
+                          deleteButton.addEventListener('click', () => deleteEvent(eventId));
+
+                    }  
+                }
+            }
+        })
+        
+      });
+    
+
+
+
+
+
+      // Check if the user is authenticated
+
+
+
+
+
+    logout.addEventListener("click", () => {
+        signOut(auth)
+          .then(() => {
+            // Sign-out successful.
+
+            swal("user is now signed out");
+            window.location.href = "index.html";
+          })
+          .catch((error) => {
+            // An error happened.
+            const errorCode = error.code;
+            const errorMessage = error.message;
+
+            alert(errorMessage);
+          });
+      });
+
+
+     
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    const userRef = ref(db, `Clients/${uid}`);
+
+    console.log("User is authenticated. UID:", uid);
+
+    $(document).on('click', '#save', function (event) {
+      event.preventDefault();
+
+      const serviceEl = $("#service").val();
+      const numberEl = $("#num").val();
+      const durationEl = $("#duration").val();
+      const datesEl = $("#dater").val();
+
+      console.log("Service data:", serviceEl, numberEl, durationEl, datesEl);
+
+      // Validate input values (add your validation logic here)
+
+      // Check if additional information already exists before updating
+      get(userRef)
+        .then((snapshot) => {
+          if (snapshot.exists()) {
+            const userData = snapshot.val();
+
+            // Check if the fields you want to update are already present
+            if (!userData.duration && !userData.startDate && !userData.service && !userData.phone) {
+              // Update additional information in the user's node
+              update(userRef, {
+              service: serviceEl,
+              duration: durationEl,
+              phone: numberEl,
+              startDate: datesEl,
+                // Add other fields as needed
+              })
+                .then(() => {
+        console.log("User information updated successfully");
+                })
+                .catch((error) => {
+               console.error("Error updating user information:", error);
+
+                });
+            } else {
+                         swal({
+        text: "User has already updated information",
+        });
+              console.log("User has already updated information");
+              
+            }
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching user information:", error);
+        });
+    });
+
+    // Rest of your code that relies on user authentication
+  } else {
+    console.log("User is not authenticated.");
+    // Handle case where there is no authenticated user
+  }
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    themeSystem: 'bootstrap5',
+    contentHeight: 200,
+    editable: true,
+    initialView: 'dayGridMonth',
+    events: [], // Initialize with an empty array of events
+    dateClick: function(info) {
+      var date = info.dateStr;
+
+      $('#createEventModal').modal('show');
+      $('#eventDate').val(date);
+    }
+  });
+
+  const user = auth.currentUser;
+
+
+      onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    const eventsRef = ref(db, `Clients/${uid}/Events`);
+     $('#createEventForm').on('submit', function(event) {
+  event.preventDefault();
+
+  var title = $('#eventTitle').val();
+  var date = $('#eventDate').val();
+
+  calendar.addEvent({
+    title: title,
+    start: date,
+    end: date,
+    allDay: true
+  });
+ window.location.reload();
+  // Add event to database
+  push(eventsRef, {
+    title: title,
+    date: date
+  })
+  .then((ref) => {
+    console.log("Event added with ID: ", ref.key);
+    
+  })
+  .catch((error) => {
+    console.error("Error adding event: ", error);
+  });
+
+  $('#createEventModal').modal('hide');
+});
+
+    // Rest of your code that relies on user authentication
+  } else {
+    // Handle case where there is no authenticated user
+  }
+
+
+
+  
+});
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    const eventsRef = ref(db, `Clients/${uid}/Events`);
+   
+    // Fetch events associated with the user from the database
+    get(eventsRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const eventsData = snapshot.val();
+
+          // Check if eventsData is an object
+          if (typeof eventsData === 'object' && eventsData !== null) {
+            for (const eventId in eventsData) {
+              const event = eventsData[eventId];
+              calendar.addEvent({
+                title: event.title,
+                start: event.date,
+                end: event.date,
+                allDay: true
+              });
+            }
+          }
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving events:", error);
+      });
+
+    // Rest of your code
+  } else {
+    // Handle case where there is no authenticated user
+  }
+});
+
+  calendar.render();
+});
+
+function deleteEvent(eventId) {
+  const user = auth.currentUser;
+
+  if (user) {
+    const uid = user.uid;
+    const db = getDatabase(app);
+    const databaseRef = ref(db);
+    const eventsRef = ref(db, `Clients/${uid}/Events`);
+    const eventRefToDelete = child(eventsRef, eventId);
+
+
+
+ 
+    remove(eventRefToDelete)
+    
+      .then(() => {
+         window.location.reload();
+        console.log('Event deleted successfully from Realtime Database');
+      })
+      .catch((error) => {
+        console.error('Error deleting event from Realtime Database:', error);
+      });
+  } else {
+    console.error('User is not authenticated.');
+  }
+       
+}
+
+
+  onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    const eventsRef = ref(db, `Clients/${uid}/Events`);
+   
+    // Fetch events associated with the user from the database
+    get(eventsRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const eventsData = snapshot.val();
+
+          // Check if eventsData is an object
+          if (typeof eventsData === 'object' && eventsData !== null) {
+            for (const eventId in eventsData) {
+              const event = eventsData[eventId];
+              calendar.addEvent({
+                title: event.title,
+                start: event.date,
+                end: event.date,
+                allDay: true
+              });
+            }
+          }
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving events:", error);
+      });
+
+    // Rest of your code
+  } else {
+    // Handle case where there is no authenticated user
+  }
+});
+
+
+
+
+
+  onAuthStateChanged(auth, (user) => {
+
+    const stripe = Stripe("pk_test_51OWKvqBuJmGQYbGZqqY1rysEF2A7Ad9isIDkMKBd1Htj6vbyScs5m8mDV4WFblqenHAQz4LdPqWkkSCs0TgBRpwq00p8s00ShU ")
+document.getElementById('checkout').addEventListener('click', () => {
+  
+    // Check if the user is authenticated
+    if (user && user.uid) {
+        const uid = user.uid;
+
+        const userRef = ref(db, "Clients/" + uid);
+
+        get(userRef)
+            .then((snapshot) => {
+                if (snapshot.exists()) {
+                    const userData = snapshot.val();
+                    const serviceEL = userData.service;
+                     const durationsEl = userData.duration;
+                    
+                    stripe.redirectToCheckout({
+                        lineItems: [
+                            {
+                                price: serviceEL === "Assisted Living" ? "price_1Of1j2BuJmGQYbGZrRcIMyI0" : serviceEL === "Memory Care" ? "price_1Of2slBuJmGQYbGZNCJsHRre" : serviceEL === "Senior Living" ? "price_1Of3JTBuJmGQYbGZcyrcEK3r" : null,
+                                quantity: parseInt(durationsEl)
+                            },
+                        ],
+                        mode: "subscription",
+                        successUrl: "https://www.google.com/",
+                        cancelUrl: "https://www.twitter.com/",
+                    })
+                    .then((result) => {
+                        // Handle success (this block may not be necessary)
+                        console.log(result);
+                    })
+                    .catch((error) => {
+                        // Handle errors
+                        console.error("Error during checkout:", error);
+                    });
+                } else {
+                    console.log("User data not found");
+                }
+            })
+            .catch((error) => {
+                console.error("Error fetching user data:", error);
+            });
+    } else {
+        console.error("User not authenticated or user object is null/undefined");
+    }
+});
+
+});
+
+
+
+
+
+
+
+</script>
+   
+</body>
+</html>

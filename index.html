@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A touch of home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="./stuffs.css">
+<link rel="stylesheet" href="./css/Style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+<body>
+ <header class=" bg-success" id="site-header">
+<div class="container content">
+
+  <!-- <div class="address">
+    <i class="fa fa-map-marker"></i>
+    <p>4301 Crestridge Dr, Round Rock, TX 78681</p>
+  </div> -->
+
+  <!-- <div class="divider"></div>
+  <div class="address">
+    <i class="fa fa-clock-o"></i>
+    <p>Mon - Sat   9:00AM - 5:00PM</p>
+  </div> -->
+  <!-- <div class="divider"></div> -->
+  <div class="address">
+   <img src="./images/call.png" alt="">
+    <p><a href="tel:+15127735821">+15127735821</a></p>
+     <div class="divider mx-2"></div>
+    <img src="./images/mfb.png" alt="">
+    <p><a href="mailto:atouchoft@hotmail.com">atouchoft@hotmail.com</a></p>
+  </div>
+
+</div>
+  <div class="socials w3-hide-medium w3-hide-small">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+
+  </div>
+ </header>
+
+
+<nav class="navbar navbar-expand-lg bg-body-light" id="site-navbar" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="./images/logo.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2  mb-lg-0">
+        <li class="nav-item animated-line">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link" href="./About.html">About Us</a>
+        </li>
+        <li class="nav-item animated-line dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="toggle" aria-expanded="false">
+            Our Services
+          </a>
+          <ul class="dropdown-menu" id="item">
+            <li><a class="dropdown-item" href="details.html?cardId=card2">Senior Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card1">Assisted Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card3">Memory Care</a></li>
+     
+          </ul>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link"  href="#" >Gallery</a>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link"  href="./FAQ.html" >FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="./contact.html" >Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="./Login.html" class="btn btn-success">Login</a>
+        <a href="./Register.html" class="btn btn-outline-success  mx-3">Register</a>
+
+      </form>
+    </div>
+  </div>
+</nav>
+   
+  
+<section class="home">
+ 
+      <div class="contents">
+    <h1>Your Home, Our Heart</h1>
+   <button class="btn btn-success px-5 ani"  onclick="document.getElementById('id01').style.display='block'" >Schedule a Tour <img src="./images/arrr.png" class="" alt=""> </button> 
+      </div>
+  <div class="fixed-icon">
+          <img src="./images/WhatsApp_Image_2023-12-13_at_09.12.52_c63b689c-removebg-preview.png" alt="Icon">
+        </div>
+
+</section>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" >
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="./images/logo.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" class="forms" action="" method="post" name="submit-to-google-sheet1">
+        <div class="w3-section">
+          <label><b>Name</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" name="Name" type="text" placeholder="Please enter your name" required>
+          <label><b>Location</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" name="Location" type="text" placeholder="Please enter your name"  required>
+          <label><b>Date</b></label>
+          <input class="w3-input w3-border" type="date" name="Date" placeholder="Enter Password" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Send</button>
+    
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+     <p class="w3-right w3-padding w3-hide-small">Call <a href="tel:+15127735821">+15127735821</a></p>
+      </div>
+
+    </div>
+  </div>
+
+
+<section class="home2">
+  <div class="container">
+    <h1 class="">Why Choose Us?</h1>
+    <p>In the heart of United State, where compassion meets comfort, A Touch of Home  stands as a beacon of care and companionship for our cherished elders. With a legacy rooted in dignity and respect, A Touch of Home is not just an assisted living facility; it's a community dedicated to enhancing the lives of seniors.
+    </p>
+    <div class="row wrate">
+  
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./images/team (4).png" alt="Avatar" style="width:60px;height:60px;">
+      <h5>Our Vision</h5>
+    </div>
+    <div class="flip-card-back">
+      <p>At A Touch of Home, we envision a world where aging is celebrated, and each day is filled with purpose, joy, and meaningful connections. Our vision is to create a haven that fosters independence, security, and a sense of belonging for every resident.</p>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./images/hospital-user (2).png" alt="Avatar" style="width:60px;height:60px;">
+      <h5>Holistic Care</h5>
+    </div>
+    <div class="flip-card-back">
+      <p>Our highly trained and compassionate staff is committed to providing personalized care that addresses the physical, emotional, and social needs of each resident. From wellness programs to tailored healthcare services, we prioritize the overall well-being of our residents.</p>
+    </div>
+  </div>
+</div>
+      
+
+      
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./images/home-heart (1).png" alt="Avatar" style="width:60px;height:60px;">
+      <h5>Home-like Environment</h5>
+    </div>
+    <div class="flip-card-back">
+      <p>A Touch Of Home is designed to feel like home. Warm, inviting spaces encourage social interaction, while private living areas offer a retreat for quiet moments. Our thoughtfully crafted environment promotes a sense of belonging and comfort.</p>
+    </div>
+  </div>
+</div>
+      
+
+ 
+
+    </div>
+    <div class="row wrate">
+  
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./images/society (1).png" alt="Avatar" style="width:60px;height:60px;">
+      <h5>Enriching Activities</h5>
+    </div>
+    <div class="flip-card-back">
+      <p>Life at a Touch of Home is vibrant and engaging. We offer a diverse range of activities and events that cater to various interests. From art classes to cultural outings, residents have the opportunity to explore new passions and build lasting friendships.</p>
+    </div>
+  </div>
+</div>
+
+
+
+        <div class="flip-card col-md-12">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./images/family-dress.png" alt="Avatar" style="width:60px;height:60px;">
+      <h5>Family-Centered Approach</h5>
+    </div>
+    <div class="flip-card-back">
+      <p>We understand the importance of family, and Touch of Home embraces a family-centered care philosophy. Regular family events, open communication channels, and collaborative decision-making ensure that families are integral partners in the care and well-being of their loved ones.</p>
+    </div>
+  </div>
+</div>
+      
+
+      
+        <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="./images/lightbulb-dollar.png" alt="Avatar" style="width:60px;height:60px;">
+      <h5>Innovation in Senior Living:</h5>
+    </div>
+    <div class="flip-card-back">
+      <p>A Touch of Home is committed to staying at the forefront of senior care. We integrate innovative technologies and practices to enhance safety, communication, and the overall quality of life for our residents.</p>
+    </div>
+  </div>
+</div>
+      
+
+ 
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="home3">
+  <div class="container">
+ <h1 class="">Our Services</h1>
+ <p>Initiate your journey to explore the myriad aspects of  luxury Assisted living choices provided by A touch of Home.</p>
+
+ <div class="row">
+
+    <div class="col-md-4" id="card2">
+   <div class="card">
+  <img src="./images/medium-shot-senior-man-holding-tablet.jpg" class="card-img-top img-fluid w3-hover-opacity" alt="...">
+  <div class="card-body">
+    <h5 class="card-title ">Senior Living</h5>
+    <p class="card-text">Embrace a new chapter of life surrounded by like-minded individuals.</p>
+    <a href="details.html?cardId=card2" class="btn btn-success" id="btn" data-card-id="card2">Read More</a>
+  </div>
+</div>
+  </div>
+
+  <div class="col-md-4" id="card1">
+  <div class="card">
+  <img src="./images/doctor-talking-with-her-elder-patient.jpg" class="card-img-top img-fluid w3-hover-opacity" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Assisted Living</h5>
+    <p class="card-text">We help older adults enjoy a comfortable and supportive living environment.</p>
+    <a href="details.html? w3-text-green cardId=card1" class="btn btn-success"id="btn"  data-card-id="card1">Read More</a>
+  </div>
+</div>
+  </div>
+
+
+
+
+  <div class="col-md-4" id="card3">
+  <div class="card">
+  <img src="./images/doctor-talking-with-her-patient.jpg" class="card-img-top img-fluid w3-hover-opacity" alt="...">
+  <div class="card-body">
+    <h5 class="card-title ">Memory Care</h5>
+    <p class="card-text">Memory Care Community, a place where compassion meets expertise.</p>
+    <a href="details.html?cardId=card3" class="btn btn-success" id="btn" data-card-id="card3">Read More</a>
+  </div>
+</div>
+  </div>
+
+
+ </div>
+  </div>
+  
+
+
+</section>
+
+
+<section class="gallery">
+  <div class="container-fluid">
+  <h1 class="">Gallery</h1>
+   <div class="autoplay carousel-inner">
+
+     <div class=" carousel-item active img">
+      <img src="./images/car 1.jpg" class=" w-100" alt="...">
+       <div class="overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+      
+      </div>
+      </div>
+
+     <div class="img carousel-item">
+      <img src="./images/car 2.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+    
+      </div>
+      </div>
+
+     <div class="img carousel-item">
+      <img src="./images/car 3.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+      </div>
+     <div class="img carousel-item">
+      <img src="./images/care 4.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+      
+      </div>
+      </div>
+     <div class="img carousel-item">
+      <img src="./images/care 5.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+     
+      </div>
+      </div>
+     <div class="img carousel-item">
+      <img src="./images/care 6.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+      
+      </div>
+      </div>
+     <div class="img carousel-item">
+      <img src="./images/care 7.jpg" class=" w-100" alt="...">
+      <div class="overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+
+      </div>
+      </div>
+    
+   </div>
+  
+
+
+  </div>
+
+
+</section>
+
+
+
+<section class="tes">
+    <div class="container">
+      <h1 class="">What Client Say</h1>
+ <div class="testi-rowa">
+    <div class="testi-column">
+        <div class="user">
+            <img src="images/user-3.png" alt="">
+            <div class="user-info">
+                <h5 class="">Bryian Sydney<img src="./images/twitter.png" alt=""></h5>
+                <small>@Syneezy</small>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum expedita 
+            dolorem exercitationem impedit eius labore delectus voluptatibus. Molestiae voluptatem optio possimus sequi
+           .</p>
+    </div>
+    <div class="testi-column">
+        <div class="user">
+            <img src="images/user-2.png" alt="">
+            <div class="user-info">
+                <h5 class="">Keji Aniibire <img src="./images/twitter.png" alt=""></h5>
+                <small>@Renny</small>
+            </div>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum expedita 
+        dolorem exercitationem impedit eius labore delectus voluptatibus. Molestiae voluptatem optio possimus sequi
+        
+       .</p></div>
+    <div class="testi-column">
+        
+        <div class="user">
+            <img src="images/user-5.png" alt="">
+            <div class="user-info">
+                <h5 class="">Abdul Malik <img src="./images/twitter.png" alt=""></h5>
+                <small>@fowosere</small>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum expedita 
+        dolorem exercitationem impedit eius labore delectus voluptatibus. Molestiae voluptatem optio possimus sequi
+         </p>
+        
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="extras">
+  <div class="container">
+ 
+     <div class="row mt-5">
+      <div class="col-md-6 col-sm-12">
+        <img src="./images/ffff.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6 col-sm-12 tte">
+         <h1 class="">Bid farewell to nights without sleep.</h4>
+        <p>We understand your desire for your elderly parent to experience love and happiness at any stage of life. To achieve this, it's crucial to discover an assisted living solution that provides the compassionate care your parent truly deserves.At present, your intuition may be signaling that the current level of care falls short, leaving you burdened with guilt, stress, and distraction. Concerns about potential challenges your parent might face weigh heavily on your mind, and you're left contemplating how much longer you and your family can manage under these circumstances. It shouldn't have to be this way.</p>
+   <button class="btn btn-success px-5 ani"  onclick="document.getElementById('id01').style.display='block'" >Schedule a Tour <img src="./images/arrr.png" class="" alt=""> </button> 
+      </div>
+        
+      </div>
+     </div>
+
+  </div>
+</section>
+
+<section class="faq4">
+  <div class="container">
+    <h1>FAQ</h1>
+    <div class="row">
+      <div class="col-md-6 col-lg-12 col-sm-12">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       Is the community ensured to be safe and secure?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+Certainly. As a member of The Touch of home community, you benefit from around-the-clock security, and our dedicated staff is committed to ensuring your safety. Additionally, each residence is equipped with an emergency call system, providing you with an extra layer of protection and peace of mind.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       Does a Touch of home accommodate pets?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+At The Touch of Home, we welcome pets. When you visit, feel free to inquire with a team member for additional details.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+   What sets Life Care apart and makes it uniquely special?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">With Life Care at A Touch of Home, your initial entrance fee grants you the freedom to relish independent residential living. It assures you that additional care is readily available if the need arises, all at predictable fees. Living at A touch of Home means saying goodbye to time-consuming home maintenance tasks, alleviating concerns about becoming a burden to loved ones, eliminating worries about aging among unfamiliar faces, and dispelling anxieties regarding the availability and cost of high-quality long-term care. Life Care at The Buckingham seamlessly integrates unparalleled financial security and peace of mind with a genuinely independent lifestyle, complemented by an array of services and amenities.</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="extras2">
+  <div class="container">
+   <h1 class="">Provide your parent with the affectionate care they rightfully deserve.</h1>
+   <a href="./contact.html"><button class="btn btn-success px-5 ani">Learn More <img src="./images/arrr.png" class="" alt=""> </button> 
+</a>
+     <div class="row mt-5">
+     
+  
+
+     </div>
+
+  </div>
+</section>
+
+
+<section class="touch">
+  <div class="container">
+    <h1 class="">Get in touch</h1>
+    <p>Kindly complete the form below, and a member of our team will contact you to provide assistance.</p>
+      <div class="row mt-5 ">
+        <div class="col-md-6">
+          <img src="./images/aas.jpg" alt="" style="width: 100%" class="img-fluid w3-image">
+        </div>
+        <div class="col-md-6 format">
+          <form action="" method="post" name="submit-to-google-sheet">
+            <div class="namedetails">
+              <div class=" name">
+               <label for="exampleFormControlInput1" class="form-label">First name</label>
+  <input type="text" class="form-control" name="Firstname" id="exampleFormControlInput1" required placeholder="Jane">
+</div>
+    <div class=" last">
+  <label for="exampleFormControlInput1" class="form-label">Last name</label>
+  <input type="text" class="form-control" name="Lastname" id="exampleFormControlInput1" required placeholder="Ashvin">
+</div>
+            </div>
+            <div class="namedetails">
+              <div class="mb-2 name">
+               <label for="exampleFormControlInput1" class="form-label">Email</label>
+  <input type="text" class="form-control" name="Email" id="exampleFormControlInput1" required placeholder="@mail.com">
+</div>
+    <div class="last">
+  <label for="exampleFormControlInput1" class="form-label">Phone</label>
+  <input type="number" class="form-control" name="Phone" id="exampleFormControlInput1" required placeholder="+151232233">
+</div>
+            </div>
+            <div class="namedetails mt-2">
+              <div class="mb-2 name">
+               <label for="exampleFormControlInput1" class="form-label">Desired move in date</label>
+  <input type="date" class="form-control" name="Date" id="exampleFormControlInput1" required placeholder="@mail.com">
+</div>
+    <div class="last">
+      <label for="exampleFormControlInput1" class="form-label">Choose a service</label>
+ <select class="form-select" name="Choice" aria-label="Default select example">
+  <option disabled>Select</option>
+  <option value="Senior Living">Senior Living</option>
+  <option value="Assisted Living">Assisted Living</option>
+  <option value="Memory Care">Memory Care</option>
+</select>
+</div>
+
+            </div>
+    
+<div class="">
+  <label for="exampleFormControlTextarea1" class="form-label">Please send us a message</label>
+  <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button class="btn btn-success">Send Message</button>
+
+  </form>
+
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<section  class="foot bg-success">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-md-4">
+        <img src="./images/k.png" style="width: 200px; margin: 0;" alt="">
+
+        <div class="add mt-3">
+            <img src="./images/location.png" alt="">
+             <p>4301 Crestridge Dr, Round Rock, TX 78681</p>
+      
+      </div>
+        <div class="add2">
+           <img src="./images/mfb.png" alt="">
+    <p><a href="mailto:atouchoft@hotmail.com">atouchoft@hotmail.com</a></p>
+      
+      </div>
+        <div class="add2">
+       <img src="./images/call.png" alt="">
+    <p><a href="tel:+15127735821">+15127735821</a></p>
+      
+      </div>
+    </div>
+  <div class="col-md-4 soc">
+    <h4>Connect with us</h4>
+    <div class="icos">
+      <a href="http://"><img src="./images/facebook-app-round-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/x-social-media-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/instagram-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/linkedin-app-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/youtube.png" alt=""></a>
+      <a href="https://api.whatsapp.com/send?phone=9035137482"><img src="./images/whatsapp-white-icon.png" alt=""></a>
+     
+<p  onclick="document.getElementById('id01').style.display='block'" >Schedule a Tour </p>
+    </div>
+  </div>
+
+  <div class="col-md-4 menu">
+
+    <h4>Menu</h4>
+    <a href="./index.html">Home</a>
+    <a href="./About.html">About Us</a>
+    <a href="./FAQ.html">FAQ</a>
+    <a href="./contact.html">Contact us</a>
+
+   
+  </div>
+
+  </div>
+
+  <h3> Copyright  &copy A Touch of Home. All rights reserved, <script>document.write(new Date().getFullYear())</script>.</h3>
+    <p>Designed and Developed by <a href="https://www.instagram.com/deeygitalstudio/">Digitalstudio</a></p>
+
+</section>
+     
+    <script src="./jquery-3.7.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+     <script src="./app.js"></script>
+    <script src="./bootstrap.min.js"></script>
+
+
+   
+</body>
+</html>

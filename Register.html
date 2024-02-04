@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="./css/Style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+ <header class=" bg-success  w3-card sticky-top">
+<div class="container content">
+
+  <!-- <div class="address">
+    <i class="fa fa-map-marker"></i>
+    <p>4301 Crestridge Dr, Round Rock, TX 78681</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="address">
+    <i class="fa fa-clock-o"></i>
+    <p>Mon - Sat   9:00AM - 5:00PM</p>
+  </div>
+  <div class="divider"></div> -->
+<div class="address">
+   <img src="./images/call.png" alt="">
+    <p><a href="tel:+15127735821">+15127735821</a></p>
+     <div class="divider mx-2"></div>
+    <img src="./images/mfb.png" alt="">
+    <p><a href="mailto:atouchoft@hotmail.com">atouchoft@hotmail.com</a></p>
+  </div>
+
+</div>
+  <div class="socials">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+
+  </div>
+ </header>
+<nav class="navbar navbar-expand-lg bg-body-light w3-card-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="./images/logo.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item animated-line">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link active" href="./About.html">About Us</a>
+        </li>
+        <li class="nav-item animated-line dropdown">
+          <a class="nav-link active  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="toggle" aria-expanded="false">
+            Our Services
+          </a>
+          <ul class="dropdown-menu" id="item">
+            <li><a class="dropdown-item" href="details.html?cardId=card2">Senior Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card1">Assisted Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card3">Memory Care</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link active"  href="#" >Gallery</a>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link active"  href="./FAQ.html" >FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  href="./contact.html" >Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+         <a href="./Login.html" class="btn btn-success">Login</button></a>
+        <a href="./Register.html" class="btn btn-outline-success mx-3">Register</button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<section class="register">
+
+   <div class="row">
+       <div class=" col-sm-12 wrap w3-animate-zoom">
+    <form action="" class="mt-5">
+            <img src="/images/logo.jpg" alt="" style="width: 150px; display: block; margin: 0 auto;">
+          <h1>Create Account</h1>
+        <div class="mb-2">
+  <label for="exampleFormControlInput1" class="form-label">First Name</label>
+  <input type="text" id="Fname" class="form-control"  required placeholder="First name">
+</div>
+        <div class="mb-2">
+  <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+  <input type="text" id="Lname" class="form-control"  required placeholder="First name">
+</div>
+
+        <div class="mb-2">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" id="email" class="form-control"  required placeholder="Enter your email">
+</div>
+        <div class="mb-2">
+  <label for="exampleFormControlInput1" class="form-label">Password</label>
+  <input type="password" id="password" class="form-control" required placeholder="Enter your email">
+</div>
+<div class="form-check mb-2">
+  <input class="form-check-input" type="checkbox" value="" id="check">
+  <label class="form-check-label" for="flexCheckDefault">
+    Please read our privacy policy and agree to our <a href="./Policy.html"><span class="text-primary">terms and conditions</span></a> 
+  </label>
+   
+  <button class="btn btn-success w-100 mt-3" id="register">Register</button>
+
+  <div class="log">
+    <p>Already have an account?</p>
+    <a href="./Login.html">Login</a>
+  </div>
+    </form>
+
+       </div>
+
+</div>
+
+
+</section>
+
+
+
+
+
+  
+
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+     import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail,  signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+   import {getDatabase, set, get, update, remove, ref, child} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAQgGNtM-rMDVqtIf0hM25KiTauxO8SMvM",
+    authDomain: "a-touch-of-home.firebaseapp.com",
+    projectId: "a-touch-of-home",
+    database: "https://a-touch-of-home-default-rtdb.firebaseio.com/",
+    storageBucket: "a-touch-of-home.appspot.com",
+    messagingSenderId: "318456681019",
+    appId: "1:318456681019:web:4d55f308d84738bee9821e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+ const auth = getAuth(app);
+    const db = getDatabase(app);
+    const databaseRef = ref(db);
+
+
+
+
+
+
+        const checkEl = document.getElementById("check");	    
+       
+
+       const registerEl = document.getElementById("register");
+   
+            const FnameEl = document.getElementById("Fname")
+     const LnameEl = document.getElementById("Lname")
+    const emailEl = document.getElementById("email")
+    const passwordEl = document.getElementById("password")
+     
+
+       registerEl.addEventListener("click", (e) => {
+          e.preventDefault();
+        if(FnameEl && LnameEl.value === "" ){
+               swal({text: "Form fields cannot be empty"});
+
+          
+        }else if (!checkEl.checked){
+              swal({text: "Please accept our terms and condition"});
+           
+           
+        }else{
+             
+     const FnameEl = document.getElementById("Fname").value;
+     const LnameEl = document.getElementById("Lname").value;
+    const emailEl = document.getElementById("email").value;
+    const passwordEl = document.getElementById("password").value;
+
+        console.log(emailEl);
+      
+        createUserWithEmailAndPassword(auth, emailEl, passwordEl)
+          .then((userCredential) => {
+            const user = userCredential.user;
+             swal({text: "User Created Successfully"});
+            set(ref(db, 'Clients/' + user.uid),{
+              Firstname: FnameEl,
+              Lastname: LnameEl,
+              Email: emailEl,
+              Password: passwordEl,
+            })
+      
+            window.location.href = "./Login.html";
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+      
+            if (errorCode === "auth/invalid-email") {
+               swal({
+        text: "Invalid Email format, Please enter a valid email address",
+        });
+            } else {
+               swal({
+        text: errorMessage,
+        });
+            }
+          });
+        }
+     
+      });
+
+
+
+
+</script>
+
+  <script src="./jquery-3.7.js"></script>
+     <script src="./app.js"></script>
+    <script src="./bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="stuffs.css">
+<link rel="stylesheet" href="./css/Style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <header class=" bg-success w3-card">
+<div class="container content">
+<!-- 
+  <div class="address">
+    <i class="fa fa-map-marker"></i>
+    <p>4301 Crestridge Dr, Round Rock, TX 78681</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="address">
+    <i class="fa fa-clock-o"></i>
+    <p>Mon - Sat   9:00AM - 5:00PM</p>
+  </div>
+  <div class="divider"></div> -->
+<div class="address">
+   <img src="./images/call.png" alt="">
+    <p><a href="tel:+15127735821">+15127735821</a></p>
+     <div class="divider mx-2"></div>
+    <img src="./images/mfb.png" alt="">
+    <p><a href="mailto:atouchoft@hotmail.com">atouchoft@hotmail.com</a></p>
+  </div>
+</div>
+  <div class="socials w3-hide-medium w3-hide-small">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+
+  </div>
+ </header>
+<nav class="navbar navbar-expand-lg bg-body-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"><img src="./images/logo.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item animated-line">
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link" href="./About.html">About Us</a>
+        </li>
+        <li class="nav-item animated-line dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="toggle" aria-expanded="false">
+            Our Services
+          </a>
+          <ul class="dropdown-menu" id="item">
+            <li><a class="dropdown-item" href="details.html?cardId=card2">Senior Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card1">Assisted Living</a></li>
+            <li><a class="dropdown-item" href="details.html?cardId=card3">Memory Care</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link"  href="./Gallery" >Gallery</a>
+        </li>
+        <li class="nav-item animated-line">
+          <a class="nav-link"  href="./FAQ.html" >FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  href="#" >Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+      <a href="./Login.html" class="btn btn-success">Login</button></a>
+        <a href="./Register.html" class="btn btn-outline-success mx-3">Register</button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section class="contact">
+ 
+      <div class="infos">
+         <h1>We would love to hear from you</span></h1>
+      </div>
+
+
+</section>
+
+<section class="touch">
+  <div class="container">
+    <h1 class="">Get in touch</h1>
+    <p>Kindly complete the form below, and a member of our team will contact you to provide assistance.</p>
+      <div class="row mt-5 ">
+        <div class="col-md-6">
+          <img src="./images/aas.jpg" alt="" style="width: 100%" class="img-fluid w3-image">
+        </div>
+        <div class="col-md-6 format">
+          <form action="" name="submit-to-google-sheet">
+            <div class="namedetails">
+              <div class=" name">
+               <label for="exampleFormControlInput1" class="form-label">First name</label>
+  <input type="text" class="form-control" name="Firstname" id="exampleFormControlInput1" required placeholder="Jane">
+</div>
+    <div class=" last">
+  <label for="exampleFormControlInput1" class="form-label">Last name</label>
+  <input type="text" class="form-control" name="Lastname" id="exampleFormControlInput1" required placeholder="Ashvin">
+</div>
+            </div>
+            <div class="namedetails">
+              <div class="mb-2 name">
+               <label for="exampleFormControlInput1" class="form-label">Email</label>
+  <input type="text" class="form-control" name="Email" id="exampleFormControlInput1" required placeholder="@mail.com">
+</div>
+    <div class="last">
+  <label for="exampleFormControlInput1" class="form-label">Phone</label>
+  <input type="number" class="form-control" name="Phone" id="exampleFormControlInput1" required placeholder="+151232233">
+</div>
+            </div>
+            <div class="namedetails mt-2">
+              <div class="mb-2 name">
+               <label for="exampleFormControlInput1" class="form-label">Desired move in date</label>
+  <input type="date" class="form-control" name="Date" id="exampleFormControlInput1" required placeholder="@mail.com">
+</div>
+    <div class="last">
+      <label for="exampleFormControlInput1" class="form-label">Choose a service</label>
+ <select class="form-select" name="Choice" aria-label="Default select example">
+  <option disabled>Select</option>
+  <option value="Senior Living">Senior Living</option>
+  <option value="Assisted Living">Assisted Living</option>
+  <option value="Memory Care">Memory Care</option>
+</select>
+</div>
+
+            </div>
+    
+<div class="">
+  <label for="exampleFormControlTextarea1" class="form-label">Please send us a message</label>
+  <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button class="btn btn-success">Send Message</button>
+
+  </form>
+
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+
+<section  class="foot bg-success">
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col-md-4">
+        <img src="./images/k.png" style="width: 200px; margin: 0;" alt="">
+
+        <div class="add mt-3">
+            <img src="./images/location.png" alt="">
+             <p>4301 Crestridge Dr, Round Rock, TX 78681</p>
+      
+      </div>
+        <div class="add2">
+           <img src="./images/mfb.png" alt="">
+    <p><a href="mailto:atouchoft@hotmail.com">atouchoft@hotmail.com</a></p>
+      
+      </div>
+        <div class="add2">
+       <img src="./images/call.png" alt="">
+    <p><a href="tel:+15127735821">+15127735821</a></p>
+      
+      </div>
+    </div>
+  <div class="col-md-4 soc">
+    <h4>Connect with us</h4>
+    <div class="icos">
+      <a href="http://"><img src="./images/facebook-app-round-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/x-social-media-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/instagram-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/linkedin-app-white-icon.png" alt=""></a>
+      <a href="http://"><img src="./images/youtube.png" alt=""></a>
+      <a href="https://api.whatsapp.com/send?phone=9035137482"><img src="./images/whatsapp-white-icon.png" alt=""></a>
+     
+<p  onclick="document.getElementById('id01').style.display='block'" >Schedule a Tour </p>
+    </div>
+  </div>
+
+  <div class="col-md-4 menu">
+
+    <h4>Menu</h4>
+    <a href="./index.html">Home</a>
+    <a href="./About.html">About Us</a>
+    <a href="./FAQ.html">FAQ</a>
+    <a href="./contact.html">Contact us</a>
+
+   
+  </div>
+
+  </div>
+
+  <h3> Copyright  &copy A Touch of Home. All rights reserved, <script>document.write(new Date().getFullYear())</script>.</h3>
+    <p>Designed and Developed by <a href="https://www.instagram.com/deeygitalstudio/">Digitalstudio</a></p>
+
+</section>
+
+
+
+
+
+
+    <script src="./jquery-3.7.js"></script>
+     <script src="./app.js"></script>
+    <script src="./bootstrap.min.js"></script>
+
+    <script>
+
+        
+    </script>
+   
+</body>
+</html>

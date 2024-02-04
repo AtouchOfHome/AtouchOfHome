@@ -1,0 +1,1579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ font-family: 'Open Sans', sans-serif!important;
+// font-family: 'Lato', sans-serif!important;
+// font-family: 'Noto Sans Mono', monospace!important;
+
+
+
+}
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  margin: 0!important;
+  top: 40px!important;
+  z-index: 999;
+  transition: top 0.3s;
+  background-color: #ffffff;
+    img{
+        width: 150px;
+    }
+}
+
+.navbar-nav{
+    padding: 0;
+
+    .nav-item{
+       position: relative;
+       font-weight: 400px;
+
+       .nav-link{
+        font-weight: 600;
+       }
+
+        &::before{
+            content: '';
+           position: absolute;
+            width: 0;
+           height: 3px;
+            bottom: 0;
+            left: 0;
+             background-color: #0f9d0d; /* Change the color as needed */
+             transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::before{
+            width: 100%;
+            
+        }
+
+    }
+}
+
+
+
+//homepage
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/mediums-hot-smiley-people-indoors.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+   display: grid;
+  place-items: center;
+
+   .contents{
+     display: grid;
+  place-items: center;
+
+    h1{
+        color: white;
+        font-size: 80px;
+        font-weight: 600;
+        margin-bottom: 20px;
+   font-family: 'Open Sans', sans-serif;
+    }
+    a{
+        
+        margin: auto;
+        
+    }
+   }
+
+   a{
+    text-decoration: none;
+   }
+
+   .fixed-icon {
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 5px; /* Adjust the distance from the left as needed */
+    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    animation: rotate 3s linear infinite; /* Rotate animation */
+
+    img{
+        width: 80px;
+    }
+  }
+
+  button{
+    img{
+        width: 15px!important;
+    }
+  }
+
+}
+
+header{
+      margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0!important;
+  z-index: 1000;
+  transition: top 0.3s;
+    padding: 10px;
+    display: flex;
+
+     .address{
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+
+        img{
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        
+       
+        p{
+            font-size: 13px;
+            margin: 0;
+            color: #fff;
+
+            a{
+                text-decoration: none;
+            }
+        }
+
+        .fa{
+            color: #fff;
+            margin-right: 10px;
+        }
+     }
+
+     .content{
+        display: flex;
+
+    .divider {
+  width: 1px;
+  background-color: #ccc; 
+  height: 100%;
+    }
+
+     }
+
+     .socials{
+        color: #fff;
+        font-size: 13px;
+        a{
+            margin: 0 5px;
+            cursor: pointer;
+        }
+     }
+}
+
+   
+
+//about
+
+.About{
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/pexels-kampus-production-7551597.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+   .cont{
+      
+    h1{
+        font-weight: 700;
+        color: #fff;
+        font-size: 40px;
+    
+
+        span{
+            font-weight: 400;
+        }
+    }
+   }
+}
+
+
+.about2{
+    width: 100%;
+    padding: 80px 16px;
+
+    .row{
+        margin-top: 70px;
+
+        .rect{
+            background: #198754;
+            width: 100%;
+            padding: 30px;
+             border-radius: 5px;
+             color: #fff;
+             margin-top: 40px;
+
+            .line{
+                border: 1px solid white;
+                padding: 20px;
+                display: grid;
+                place-items: center;
+
+                h1{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    h4{
+        text-align: center;
+    }
+}
+
+
+
+.abt{
+    width: 100%;
+    padding: 80px 16px;
+    background: rgb(243, 243, 243);
+   
+  
+.det{
+   background: #fff;
+   
+   h1{
+
+font-weight: 600;
+   }
+   h4{
+    font-weight: 600;
+    margin-top: 20px;
+
+   }
+}
+
+}
+
+//section2 home
+
+.home2{
+    width: 100%;
+    padding: 128px 16px;
+
+ 
+
+    .container{
+
+        .wrate{
+
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-top: 30px;
+           
+        }
+
+           h1{
+        text-align: center;
+
+        margin-bottom: 30px;
+
+    }
+
+    p{
+        text-align: center;
+    }
+     
+    }
+}
+
+//section 3 home
+.home3{
+    width: 100%;
+    padding: 50px 16px;
+         background: rgba(0, 138, 67, 0.027);
+          
+
+    h1{
+        text-align: center;
+
+        margin-bottom: 10px;
+
+    }
+
+  p{
+    text-align: center;
+  }
+
+    .container{
+        .row{
+              width: 100%;
+              margin-top: 50px;
+             
+            p{
+                text-align: left;
+                font-size: 13px;
+            
+            }
+
+        h5{
+          font-weight: 600;
+   
+        }
+        img{
+            aspect-ratio: 3/2;
+        }
+
+        
+    }
+}
+
+}
+
+
+//details
+.details2{
+    width: 100%;
+    height: 60dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/grandmother-happy-spend-time-with-family.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   .info{
+      
+    h1{
+        font-weight: 700;
+        color: #fff;
+        font-size: 40px;
+
+       
+
+        
+    }
+   }
+}
+.contact{
+    width: 100%;
+    height: 80dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/aas.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   .infos{
+      
+    h1{
+        font-weight: 700;
+        color: #fff;
+        font-size: 40px;
+
+       
+
+        
+    }
+   }
+}
+
+.abt{
+    .container{
+        .row{
+            #image{
+                img{
+                    width: 100%;
+                    border-radius: 7px;
+                }
+            }
+
+           
+        }
+    }
+}
+
+//login
+
+.login{
+     width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images//portrait-disabled-senior-man-sitting-with-woman-nurse-nursing-home-looking-camera-retired-adult-wheelchair-getting-help-assistance-from-medical-assistant-facility.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+    .row{
+
+      .wrap{
+           form{
+        width: 350px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        
+    h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    label{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    ::placeholder{
+        font-size: 10px;
+        color: #ccc;
+    }
+
+    input{
+        padding: 5px 5px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .log{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        
+
+        p{
+            font-size: 10px;
+        }
+
+        a{
+            font-size: 10px;
+            color: rgb(0, 128, 255);
+        }
+    }
+   }
+      }
+
+    }
+
+}
+.register{
+     width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/portrait-senior-woman-wheelchair-man-nurse.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    
+    .row{
+
+      .wrap{
+           form{
+        width: 350px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        
+    h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    label{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    ::placeholder{
+        font-size: 10px;
+        color: #ccc;
+    }
+
+    input{
+        padding: 5px 5px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .log{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        p{
+            font-size: 10px;
+        }
+
+        a{
+            font-size: 10px;
+            color: rgb(0, 128, 255);
+        }
+    }
+   }
+      }
+
+    }
+
+  
+
+}
+
+
+
+.dashboard{
+     width:100%;
+    padding: 128px 16px;
+
+    .row{
+
+        .cal{
+            h1{
+                font-size: 14px;
+                text-align: center;
+            }
+
+            #eventsList{
+                overflow: scroll;
+                p{
+                    font-size: 8px;
+                }
+
+                h6{
+                    font-weight: 600;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #198754;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  .dash{
+    width: 100%;
+
+
+    .container-fluid{
+        // background-color: #198754!important;
+       display: flex;
+       align-items: center;
+       gap: 20px;
+       
+
+       .dashs2{
+          background-color: #FFFADF;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: space-between;
+
+
+          .totals{
+            h1{
+                font-weight: 800;
+            }
+          }
+          
+          .dashead{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h6{
+                font-weight: 600;
+                margin: 0;
+            }
+          }
+
+          h3{
+            // text-align: center;
+          }
+       }
+
+
+        .dashs{
+
+             background-color: #F0F0F0;
+             padding: 30px;
+             width: 50%;
+             border-radius: 5px;
+
+             
+        h4{
+            color: #1E2B37;
+            font-weight: 600;
+                 
+        }
+
+            h6{
+                @extend h4;
+                margin: 12px 0;
+               span{
+                font-weight: 400;
+                font-size: 13px;
+               }
+            }
+        }
+    }
+   
+  }
+
+.gallery{
+    width:100%;
+    padding: 80px 16px;
+
+    .container-fluid{
+
+  
+    .autoplay{
+        margin-top: 40px;
+        .img{
+            margin: 0 10px;
+             position: relative;
+
+            //  .overlay{
+            //       position: absolute;
+            //                     top: 0;
+            //                     left: 0;
+            //                     width: 100%;
+            //                     height: 100%;
+            //                     background: rgba(0, 0, 0, 0.1);
+            //  }
+
+         
+        }
+    }
+
+        h1{
+            text-align: center;
+        }
+
+       
+    }
+}
+
+.faq{
+     width: 100%;
+    height: 75dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/faq.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+
+    .container{
+        display: grid;
+        place-items: center;
+
+        h1{
+            text-align: center;
+        }
+
+        .freq{
+            width: 100%;
+            padding-top: 40px;
+            max-width: 900px;
+        }
+    }
+}
+
+.faq2{
+     width:100%;
+    padding: 80px 16px;
+
+    .container{
+        h1{
+            
+        }
+    }
+
+}
+.faq4{
+     width:100%;
+    padding: 80px 16px;
+
+    .container{
+        h1{
+         text-align: center;
+        }
+    }
+
+}
+
+
+.foot{
+
+    padding: 30px 16px;
+
+    .container{
+        .row{
+
+             .add{
+        display: flex;
+    
+
+        img{
+            width:15px;
+            margin-right: 5px;
+      
+        }
+
+        p{
+            color: #fff;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    .add2{
+        display: flex;
+        margin: 8px 0;
+    
+
+        img{
+            width:23px;
+            margin-right: 5px;
+      
+        }
+
+        p{
+            color: #fff;
+            margin: 0;
+            font-size: 12px;
+            
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .soc{
+       
+       h4{
+        color: #fff;
+        font-size: 20px;
+    
+       }
+       img{
+        width: 15px;
+        margin: 0 8px;
+       }
+
+       p{
+        text-align: left;
+        margin-top: 15px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: underline;
+       }
+    }
+
+
+        }
+    }
+   
+    h3{
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        margin-top: 40px;
+    }
+
+    p{
+      text-align: center;
+        font-size: 6px;
+        color: #fff;
+  
+
+        a{
+         
+        }
+        
+    }
+
+    .menu{
+        h4{
+            color: #fff;
+        }
+
+        a{
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    }
+   
+}
+.faq3{
+     width:100%;
+    padding: 60px 16px;
+
+    .container{
+        h1{
+            
+        }
+    }
+
+}
+.tes{
+     width:100%;
+    padding: 80px 16px;
+        background: rgba(0, 138, 67, 0.027);
+
+
+    h1{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+        
+
+    .extras{
+           width:100%;
+    padding: 70px 16px;
+
+    .container{
+        
+      .row{
+
+        .tte{
+            padding: 0 30px;
+
+            button{
+                img{
+                    width: 15px;
+                }
+            }
+        }
+      }
+    }
+
+    }
+
+    .extras2{
+           width:100%;
+    padding: 80px 16px;
+    background: rgba(0, 138, 67, 0.027);
+
+    .container{
+      h1{
+        text-align: center;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      button{
+        margin: 30px auto;
+        display: block;
+      }
+      img{
+        width: 15px;
+      }
+    }
+
+    }
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+.dash{
+    width: 100%;
+
+
+    .container-fluid{
+        // background-color: #198754!important;
+       flex-direction: column;
+       align-items: center;
+       gap: 20px;
+       
+
+       .dashs2{
+          background-color: #FFFADF;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: space-between;
+          margin: 20px 0;
+
+          
+          .dashead{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h6{
+                font-weight: 600;
+                margin: 0;
+            }
+          }
+
+          h3{
+            // text-align: center;
+          }
+       }
+
+
+        .dashs{
+
+             background-color: #F0F0F0;
+             padding: 30px;
+             width: 100%;
+             border-radius: 5px;
+
+             
+        h4{
+            color: #1E2B37;
+            font-weight: 600;
+                 
+        }
+
+            h6{
+                @extend h4;
+                margin: 12px 0;
+               span{
+                font-weight: 400;
+                font-size: 13px;
+               }
+            }
+        }
+    }
+   
+  }
+
+    .faq{
+     width: 100%;
+    height: 75dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/faq.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+
+    .container{
+        display: grid;
+        place-items: center;
+
+        h1{
+            text-align: center;
+        }
+
+        .freq{
+            width: 100%;
+            padding-top: 40px;
+            max-width: 900px;
+        }
+    }
+}
+
+.faq2{
+     width:100%;
+    padding: 30px 16px;
+
+    .container{
+        h1{
+           font-size: 25px; 
+        }
+    }
+
+}
+.faq4{
+     width:100%;
+    padding: 80px 16px;
+
+    .container{
+        h1{
+         text-align: center;
+        }
+    }
+
+
+
+}
+
+    .faq3{
+      padding: 40px 16px;
+
+      .container{
+
+        .row{
+           .hh{
+          h1{
+            font-size: 25px!important;
+            margin: 8px 0;
+          }
+      }
+        }
+      }
+
+    
+
+    }
+
+    .about2{
+    width: 100%;
+    padding: 60px 16px;
+
+    .row{
+        margin-top: 10px;
+
+        .rect{
+            background: #198754;
+            width: 100%;
+            padding: 30px;
+             border-radius: 5px;
+             color: #fff;
+             margin-bottom: 10px;
+
+            .line{
+                border: 1px solid white;
+                padding: 20px;
+                display: grid;
+                place-items: center;
+
+                h1{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    h4{
+        text-align: center;
+    }
+}
+
+
+    .foot{
+
+    padding: 30px 16px;
+
+    p{
+        font-size: 7px;
+    }
+
+    .container{
+        .row{
+
+             .add{
+        display: flex;
+    
+
+        img{
+            width:15px;
+            margin-right: 5px;
+      
+        }
+
+        p{
+            color: #fff;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+    .add2{
+        display: flex;
+        margin: 8px 0;
+    
+
+        img{
+            width:23px;
+            margin-right: 5px;
+      
+        }
+
+        p{
+            color: #fff;
+            margin: 0;
+            font-size: 10px;
+            
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .soc{
+        margin: 10px 0;
+       
+       h4{
+        color: #fff;
+        font-size: 20px;
+    
+       }
+       img{
+        width: 15px;
+        margin: 0 8px;
+       }
+
+       p{
+        text-align: left;
+        margin-top: 15px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: underline;
+       }
+    }
+
+
+        }
+    }
+   
+    h3{
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        margin-top: 40px;
+    }
+
+    p{
+      text-align: center;
+        font-size: 6px;
+        color: #fff;
+  
+
+        a{
+         
+        }
+        
+    }
+
+    .menu{
+        h4{
+            color: #fff;
+        }
+
+        a{
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    }
+   
+}
+
+     .extras{
+           width:100%;
+    padding: 70px 16px;
+
+    .container{
+        
+      .row{
+
+        .tte{
+            margin-top: 15px;
+
+            h1{
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+            padding: 0 10px;
+
+            button{
+                img{
+                    width: 15px;
+                }
+            }
+        }
+      }
+    }
+
+    }
+
+      .extras2{
+           width:100%;
+    padding: 80px 16px;
+    background: rgba(0, 138, 67, 0.027);
+
+    .container{
+      h1{
+        text-align: center;
+        font-size: 25px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      button{
+        margin: 30px auto;
+        display: block;
+      }
+      img{
+        width: 15px;
+      }
+    }
+
+    }
+
+    .home{
+    width: 100%;
+    height: 60dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/mediums-hot-smiley-people-indoors.jpg') ;
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+   display: grid;
+  place-items: center;
+
+   .contents{
+     display: grid;
+  place-items: center;
+
+    h1{
+        color: white;
+        font-size: 30px!important;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+   font-family: 'Open Sans', sans-serif;
+    }
+    a{
+        
+        margin: auto;
+       
+        
+    }
+   }
+
+   a{
+    text-decoration: none;
+    
+   }
+
+   .fixed-icon {
+    cursor: pointer;
+    width: 70px;
+    position: fixed;
+    bottom: 10px!important; /* Adjust the distance from the bottom as needed */
+    right: 10px!important; /* Adjust the distance from the left as needed */
+    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    animation: rotate 3s linear infinite; /* Rotate animation */
+
+    img{
+        width: 70px!important;
+    }
+  }
+
+}
+
+//home2
+
+.home2{
+    width: 100%;
+    padding: 80px 3px;
+
+
+    .container{
+
+    h1{
+        text-align: center;
+     
+        margin-bottom: 30px;
+
+    }
+
+    p{
+        text-align: center;
+    }
+
+        
+    }
+
+}
+//home4
+
+.home3{
+    width: 100%;
+    padding: 50px 16px;
+    background: rgb(243, 243, 243);
+
+    h1{
+        text-align: center;
+           font-family: 'Open Sans', sans-serif;
+        
+        margin-bottom: 10px;
+
+    }
+
+  p{
+    text-align: center;
+  }
+
+    .container{
+        .row{
+              width: 100%;
+              margin-top: 50px;
+       
+            p{
+                text-align: left;
+                font-size: 13px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+        h5{
+          font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+        }
+        img{
+            aspect-ratio: 3/2;
+        }
+
+        .col-md-4{
+            margin-top: 15px;
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+//about
+.About{
+    width: 100%;
+    height: 60dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/pexels-kampus-production-7551597.jpg') ;
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+font-family: 'Open Sans', sans-serif;
+
+   .cont{
+
+  
+      
+    h1{
+        font-weight: 700;
+        color: #fff;
+        font-size: 25px;
+     
+     text-align: center;
+
+        span{
+            font-weight: 400;
+        }
+    }
+   }
+}
+
+.abt{
+    width: 100%;
+    padding: 60px 16px;
+    background: rgb(243, 243, 243);
+  
+.det{
+   background: #fff;
+   
+   h1{
+
+   font-weight: 600;
+   }
+   h4{
+
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+   }
+}
+
+
+
+}
+
+
+//details
+.details2{
+    width: 100%;
+    height: 60dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/grandmother-happy-spend-time-with-family.jpg') ;
+    background-size: cover;
+    background-position: top;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   .info{
+      
+    h1{
+        font-weight: 700;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+
+       
+
+        
+    }
+   }
+}
+
+.wrate{
+   
+
+
+    .flip-card{
+        margin: 10px auto;
+    }
+    
+}
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .home{
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/mediums-hot-smiley-people-indoors.jpg') ;
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+   display: grid;
+  place-items: center;
+
+   .contents{
+     display: grid;
+  place-items: center;
+
+    h1{
+        color: white;
+        font-size: 80px;
+        font-weight: 600;
+        margin-bottom: 20px;
+   font-family: 'Open Sans', sans-serif;
+   text-align: center;
+    }
+    a{
+        
+        margin: auto;
+        
+    }
+   }
+
+   a{
+    text-decoration: none;
+   }
+
+   .fixed-icon {
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 5px; /* Adjust the distance from the left as needed */
+    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    animation: rotate 3s linear infinite; /* Rotate animation */
+
+    img{
+        width: 150px;
+    }
+  }
+
+}
+
+.wrate{
+   
+
+
+    .flip-card{
+        margin: 0 auto;
+    }
+    
+}
+
+.home3{
+    width: 100%;
+    padding: 50px 16px;
+    background: rgb(243, 243, 243);
+
+    h1{
+        text-align: center;
+           font-family: 'Open Sans', sans-serif;
+        
+        margin-bottom: 10px;
+
+    }
+
+  p{
+    text-align: center;
+  }
+
+    .container{
+        .row{
+              width: 100%;
+              margin-top: 50px;
+       
+            p{
+                text-align: left;
+                font-size: 13px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+        h5{
+          font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+        }
+        img{
+            aspect-ratio: 3/2;
+        }
+
+        .col-md-4{
+            margin-top: 15px;
+        }
+    }
+}
+
+}
+
+.wrate{
+   
+
+
+    .flip-card{
+        margin: 10px auto;
+    }
+    
+}
+
+    
+}

@@ -1,0 +1,1054 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  margin: 0 !important;
+  top: 40px !important;
+  z-index: 999;
+  transition: top 0.3s;
+  background-color: #ffffff;
+}
+.navbar img {
+  width: 150px;
+}
+
+.navbar-nav {
+  padding: 0;
+}
+.navbar-nav .nav-item {
+  position: relative;
+  font-weight: 400px;
+}
+.navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+}
+.navbar-nav .nav-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #0f9d0d; /* Change the color as needed */
+  transition: width 0.3s ease-in-out;
+}
+.navbar-nav .nav-item:hover::before {
+  width: 100%;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/mediums-hot-smiley-people-indoors.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+.home .contents {
+  display: grid;
+  place-items: center;
+}
+.home .contents h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.home .contents a {
+  margin: auto;
+}
+.home a {
+  text-decoration: none;
+}
+.home .fixed-icon {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 5px; /* Adjust the distance from the left as needed */
+  z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+  animation: rotate 3s linear infinite; /* Rotate animation */
+}
+.home .fixed-icon img {
+  width: 80px;
+}
+.home button img {
+  width: 15px !important;
+}
+
+header {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0 !important;
+  z-index: 1000;
+  transition: top 0.3s;
+  padding: 10px;
+  display: flex;
+}
+header .address {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+header .address img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+header .address p {
+  font-size: 13px;
+  margin: 0;
+  color: #fff;
+}
+header .address p a {
+  text-decoration: none;
+}
+header .address .fa {
+  color: #fff;
+  margin-right: 10px;
+}
+header .content {
+  display: flex;
+}
+header .content .divider {
+  width: 1px;
+  background-color: #ccc;
+  height: 100%;
+}
+header .socials {
+  color: #fff;
+  font-size: 13px;
+}
+header .socials a {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.About {
+  width: 100%;
+  height: 100dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/pexels-kampus-production-7551597.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.About .cont h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+}
+.About .cont h1 span {
+  font-weight: 400;
+}
+
+.about2 {
+  width: 100%;
+  padding: 80px 16px;
+}
+.about2 .row {
+  margin-top: 70px;
+}
+.about2 .row .rect {
+  background: #198754;
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 40px;
+}
+.about2 .row .rect .line {
+  border: 1px solid white;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+.about2 .row .rect .line h1 {
+  font-size: 25px;
+}
+.about2 h4, .about2 .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .about2 h6 {
+  text-align: center;
+}
+
+.abt {
+  width: 100%;
+  padding: 80px 16px;
+  background: rgb(243, 243, 243);
+}
+.abt .det {
+  background: #fff;
+}
+.abt .det h1 {
+  font-weight: 600;
+}
+.abt .det h4, .abt .det .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .abt .det h6 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.home2 {
+  width: 100%;
+  padding: 128px 16px;
+}
+.home2 .container .wrate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.home2 .container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.home2 .container p {
+  text-align: center;
+}
+
+.home3 {
+  width: 100%;
+  padding: 50px 16px;
+  background: rgba(0, 138, 67, 0.027);
+}
+.home3 h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.home3 p {
+  text-align: center;
+}
+.home3 .container .row {
+  width: 100%;
+  margin-top: 50px;
+}
+.home3 .container .row p {
+  text-align: left;
+  font-size: 13px;
+}
+.home3 .container .row h5 {
+  font-weight: 600;
+}
+.home3 .container .row img {
+  aspect-ratio: 3/2;
+}
+
+.details2 {
+  width: 100%;
+  height: 60dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/grandmother-happy-spend-time-with-family.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details2 .info h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact {
+  width: 100%;
+  height: 80dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/aas.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .infos h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+}
+
+.abt .container .row #image img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.login {
+  width: 100%;
+  height: 100dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images//portrait-disabled-senior-man-sitting-with-woman-nurse-nursing-home-looking-camera-retired-adult-wheelchair-getting-help-assistance-from-medical-assistant-facility.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .row .wrap form {
+  width: 350px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.login .row .wrap form h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.login .row .wrap form label {
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+.login .row .wrap form ::placeholder {
+  font-size: 10px;
+  color: #ccc;
+}
+.login .row .wrap form input {
+  padding: 5px 5px;
+}
+.login .row .wrap form a {
+  text-decoration: none;
+}
+.login .row .wrap form .log {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.login .row .wrap form .log p {
+  font-size: 10px;
+}
+.login .row .wrap form .log a {
+  font-size: 10px;
+  color: rgb(0, 128, 255);
+}
+
+.register {
+  width: 100%;
+  height: 100dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/portrait-senior-woman-wheelchair-man-nurse.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+.register .row .wrap form {
+  width: 350px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.register .row .wrap form h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.register .row .wrap form label {
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+.register .row .wrap form ::placeholder {
+  font-size: 10px;
+  color: #ccc;
+}
+.register .row .wrap form input {
+  padding: 5px 5px;
+}
+.register .row .wrap form a {
+  text-decoration: none;
+}
+.register .row .wrap form .log {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.register .row .wrap form .log p {
+  font-size: 10px;
+}
+.register .row .wrap form .log a {
+  font-size: 10px;
+  color: rgb(0, 128, 255);
+}
+
+.dashboard {
+  width: 100%;
+  padding: 128px 16px;
+}
+.dashboard .row .cal h1 {
+  font-size: 14px;
+  text-align: center;
+}
+.dashboard .row .cal #eventsList {
+  overflow: scroll;
+}
+.dashboard .row .cal #eventsList p {
+  font-size: 8px;
+}
+.dashboard .row .cal #eventsList h6 {
+  font-weight: 600;
+  cursor: pointer;
+}
+.dashboard .row .cal #eventsList h6:hover {
+  color: #198754;
+}
+
+.dash {
+  width: 100%;
+}
+.dash .container-fluid {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dash .container-fluid .dashs2 {
+  background-color: #FFFADF;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+.dash .container-fluid .dashs2 .totals h1 {
+  font-weight: 800;
+}
+.dash .container-fluid .dashs2 .dashead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash .container-fluid .dashs2 .dashead h6 {
+  font-weight: 600;
+  margin: 0;
+}
+.dash .container-fluid .dashs {
+  background-color: #F0F0F0;
+  padding: 30px;
+  width: 50%;
+  border-radius: 5px;
+}
+.dash .container-fluid .dashs h4, .dash .container-fluid .dashs h6 {
+  color: #1E2B37;
+  font-weight: 600;
+}
+.dash .container-fluid .dashs h6 {
+  margin: 12px 0;
+}
+.dash .container-fluid .dashs h6 span {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.gallery {
+  width: 100%;
+  padding: 80px 16px;
+}
+.gallery .container-fluid .autoplay {
+  margin-top: 40px;
+}
+.gallery .container-fluid .autoplay .img {
+  margin: 0 10px;
+  position: relative;
+}
+.gallery .container-fluid h1 {
+  text-align: center;
+}
+
+.faq {
+  width: 100%;
+  height: 75dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/faq.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.faq .container {
+  display: grid;
+  place-items: center;
+}
+.faq .container h1 {
+  text-align: center;
+}
+.faq .container .freq {
+  width: 100%;
+  padding-top: 40px;
+  max-width: 900px;
+}
+
+.faq2 {
+  width: 100%;
+  padding: 80px 16px;
+}
+.faq4 {
+  width: 100%;
+  padding: 80px 16px;
+}
+.faq4 .container h1 {
+  text-align: center;
+}
+
+.foot {
+  padding: 30px 16px;
+}
+.foot .container .row .add {
+  display: flex;
+}
+.foot .container .row .add img {
+  width: 15px;
+  margin-right: 5px;
+}
+.foot .container .row .add p {
+  color: #fff;
+  margin: 0;
+  font-size: 12px;
+}
+.foot .container .row .add2 {
+  display: flex;
+  margin: 8px 0;
+}
+.foot .container .row .add2 img {
+  width: 23px;
+  margin-right: 5px;
+}
+.foot .container .row .add2 p {
+  color: #fff;
+  margin: 0;
+  font-size: 12px;
+}
+.foot .container .row .add2 p a {
+  text-decoration: none;
+}
+.foot .container .row .soc h4, .foot .container .row .soc .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .foot .container .row .soc h6 {
+  color: #fff;
+  font-size: 20px;
+}
+.foot .container .row .soc img {
+  width: 15px;
+  margin: 0 8px;
+}
+.foot .container .row .soc p {
+  text-align: left;
+  margin-top: 15px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.foot h3 {
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  margin-top: 40px;
+}
+.foot p {
+  text-align: center;
+  font-size: 6px;
+  color: #fff;
+}
+.foot .menu h4, .foot .menu .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .foot .menu h6 {
+  color: #fff;
+}
+.foot .menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.faq3 {
+  width: 100%;
+  padding: 60px 16px;
+}
+.tes {
+  width: 100%;
+  padding: 80px 16px;
+  background: rgba(0, 138, 67, 0.027);
+}
+.tes h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.extras {
+  width: 100%;
+  padding: 70px 16px;
+}
+.extras .container .row .tte {
+  padding: 0 30px;
+}
+.extras .container .row .tte button img {
+  width: 15px;
+}
+
+.extras2 {
+  width: 100%;
+  padding: 80px 16px;
+  background: rgba(0, 138, 67, 0.027);
+}
+.extras2 .container h1 {
+  text-align: center;
+}
+.extras2 .container a {
+  text-decoration: none;
+}
+.extras2 .container button {
+  margin: 30px auto;
+  display: block;
+}
+.extras2 .container img {
+  width: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .dash {
+    width: 100%;
+  }
+  .dash .container-fluid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .dash .container-fluid .dashs2 {
+    background-color: #FFFADF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .dash .container-fluid .dashs2 .dashead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dash .container-fluid .dashs2 .dashead h6 {
+    font-weight: 600;
+    margin: 0;
+  }
+  .dash .container-fluid .dashs {
+    background-color: #F0F0F0;
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .dash .container-fluid .dashs h4, .dash .container-fluid .dashs h6 {
+    color: #1E2B37;
+    font-weight: 600;
+  }
+  .dash .container-fluid .dashs h6 {
+    margin: 12px 0;
+  }
+  .dash .container-fluid .dashs h6 span {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .faq {
+    width: 100%;
+    height: 75dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/faq.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .faq .container {
+    display: grid;
+    place-items: center;
+  }
+  .faq .container h1 {
+    text-align: center;
+  }
+  .faq .container .freq {
+    width: 100%;
+    padding-top: 40px;
+    max-width: 900px;
+  }
+  .faq2 {
+    width: 100%;
+    padding: 30px 16px;
+  }
+  .faq2 .container h1 {
+    font-size: 25px;
+  }
+  .faq4 {
+    width: 100%;
+    padding: 80px 16px;
+  }
+  .faq4 .container h1 {
+    text-align: center;
+  }
+  .faq3 {
+    padding: 40px 16px;
+  }
+  .faq3 .container .row .hh h1 {
+    font-size: 25px !important;
+    margin: 8px 0;
+  }
+  .about2 {
+    width: 100%;
+    padding: 60px 16px;
+  }
+  .about2 .row {
+    margin-top: 10px;
+  }
+  .about2 .row .rect {
+    background: #198754;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .about2 .row .rect .line {
+    border: 1px solid white;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+  }
+  .about2 .row .rect .line h1 {
+    font-size: 25px;
+  }
+  .about2 h4, .about2 .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .about2 h6 {
+    text-align: center;
+  }
+  .foot {
+    padding: 30px 16px;
+  }
+  .foot p {
+    font-size: 7px;
+  }
+  .foot .container .row .add {
+    display: flex;
+  }
+  .foot .container .row .add img {
+    width: 15px;
+    margin-right: 5px;
+  }
+  .foot .container .row .add p {
+    color: #fff;
+    margin: 0;
+    font-size: 12px;
+  }
+  .foot .container .row .add2 {
+    display: flex;
+    margin: 8px 0;
+  }
+  .foot .container .row .add2 img {
+    width: 23px;
+    margin-right: 5px;
+  }
+  .foot .container .row .add2 p {
+    color: #fff;
+    margin: 0;
+    font-size: 10px;
+  }
+  .foot .container .row .add2 p a {
+    text-decoration: none;
+  }
+  .foot .container .row .soc {
+    margin: 10px 0;
+  }
+  .foot .container .row .soc h4, .foot .container .row .soc .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .foot .container .row .soc h6 {
+    color: #fff;
+    font-size: 20px;
+  }
+  .foot .container .row .soc img {
+    width: 15px;
+    margin: 0 8px;
+  }
+  .foot .container .row .soc p {
+    text-align: left;
+    margin-top: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .foot h3 {
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 40px;
+  }
+  .foot p {
+    text-align: center;
+    font-size: 6px;
+    color: #fff;
+  }
+  .foot .menu h4, .foot .menu .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .foot .menu h6 {
+    color: #fff;
+  }
+  .foot .menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .extras {
+    width: 100%;
+    padding: 70px 16px;
+  }
+  .extras .container .row .tte {
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+  .extras .container .row .tte h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .extras .container .row .tte button img {
+    width: 15px;
+  }
+  .extras2 {
+    width: 100%;
+    padding: 80px 16px;
+    background: rgba(0, 138, 67, 0.027);
+  }
+  .extras2 .container h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .extras2 .container a {
+    text-decoration: none;
+  }
+  .extras2 .container button {
+    margin: 30px auto;
+    display: block;
+  }
+  .extras2 .container img {
+    width: 15px;
+  }
+  .home {
+    width: 100%;
+    height: 60dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/mediums-hot-smiley-people-indoors.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    place-items: center;
+  }
+  .home .contents {
+    display: grid;
+    place-items: center;
+  }
+  .home .contents h1 {
+    color: white;
+    font-size: 30px !important;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .home .contents a {
+    margin: auto;
+  }
+  .home a {
+    text-decoration: none;
+  }
+  .home .fixed-icon {
+    cursor: pointer;
+    width: 70px;
+    position: fixed;
+    bottom: 10px !important; /* Adjust the distance from the bottom as needed */
+    right: 10px !important; /* Adjust the distance from the left as needed */
+    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    animation: rotate 3s linear infinite; /* Rotate animation */
+  }
+  .home .fixed-icon img {
+    width: 70px !important;
+  }
+  .home2 {
+    width: 100%;
+    padding: 80px 3px;
+  }
+  .home2 .container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .home2 .container p {
+    text-align: center;
+  }
+  .home3 {
+    width: 100%;
+    padding: 50px 16px;
+    background: rgb(243, 243, 243);
+  }
+  .home3 h1 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+  }
+  .home3 p {
+    text-align: center;
+  }
+  .home3 .container .row {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .home3 .container .row p {
+    text-align: left;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .home3 .container .row h5 {
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+  }
+  .home3 .container .row img {
+    aspect-ratio: 3/2;
+  }
+  .home3 .container .row .col-md-4 {
+    margin-top: 15px;
+  }
+  .About {
+    width: 100%;
+    height: 60dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/pexels-kampus-production-7551597.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  .About .cont h1 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+  }
+  .About .cont h1 span {
+    font-weight: 400;
+  }
+  .abt {
+    width: 100%;
+    padding: 60px 16px;
+    background: rgb(243, 243, 243);
+  }
+  .abt .det {
+    background: #fff;
+  }
+  .abt .det h1 {
+    font-weight: 600;
+  }
+  .abt .det h4, .abt .det .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .abt .det h6 {
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .details2 {
+    width: 100%;
+    height: 60dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/grandmother-happy-spend-time-with-family.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .details2 .info h1 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+  }
+  .wrate .flip-card {
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+    height: 100dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/mediums-hot-smiley-people-indoors.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    place-items: center;
+  }
+  .home .contents {
+    display: grid;
+    place-items: center;
+  }
+  .home .contents h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+  .home .contents a {
+    margin: auto;
+  }
+  .home a {
+    text-decoration: none;
+  }
+  .home .fixed-icon {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 5px; /* Adjust the distance from the left as needed */
+    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    animation: rotate 3s linear infinite; /* Rotate animation */
+  }
+  .home .fixed-icon img {
+    width: 150px;
+  }
+  .wrate .flip-card {
+    margin: 0 auto;
+  }
+  .home3 {
+    width: 100%;
+    padding: 50px 16px;
+    background: rgb(243, 243, 243);
+  }
+  .home3 h1 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+  }
+  .home3 p {
+    text-align: center;
+  }
+  .home3 .container .row {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .home3 .container .row p {
+    text-align: left;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .home3 .container .row h5 {
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+  }
+  .home3 .container .row img {
+    aspect-ratio: 3/2;
+  }
+  .home3 .container .row .col-md-4 {
+    margin-top: 15px;
+  }
+  .wrate .flip-card {
+    margin: 10px auto;
+  }
+}/*# sourceMappingURL=Style.css.map */
