@@ -166,3 +166,11 @@ window.onscroll = function() {
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+  // Get a reference to the video element
+  const video = document.getElementById('myVideo');
+  
+  // Play the video
+  video.play();
+});
