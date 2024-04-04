@@ -60,7 +60,7 @@
     <p><a href="tel:+15127735821">+15127735821</a></p>
      <div class="divider mx-2"></div>
     <img src="./images/mfb.png" alt="">
-    <p ><a href="mailto:atouchoft@hotmail.com" id='email'>atouchoft@hotmail.com</a></p>
+    <p ><a href="#" id='emailLink'>Email us</a></p>
   </div>
 
 </div>
@@ -581,7 +581,7 @@ At The Touch of Home, we welcome pets. When you visit, feel free to inquire with
       </div>
         <div class="add2">
            <img src="./images/mfb.png" alt="">
-    <p><a href="mailto:atouchoft@hotmail.com">atouchoft@hotmail.com</a></p>
+       <p ><a href="#" id='emailLink'>Email us</a></p>
       
       </div>
         <div class="add2">
@@ -655,8 +655,16 @@ At The Touch of Home, we welcome pets. When you visit, feel free to inquire with
 
 
     <script type="text/javascript">
-        const newEmail = document.write('<a href="mailto:' + 'atouchoft' + '@' + 'hotmail.com' + '">Email Us</a>')
-document.getElementById('email').innerHTML = newEmail ;
+        <script type="text/javascript">
+        // Email address parts
+        var emailUsername = 'atouchoft';
+        var emailDomain = 'hotmail.com';
+
+        // Generate the email link
+        var emailLink = document.getElementById('emailLink');
+        emailLink.href = 'mailto:' + emailUsername + '@' + emailDomain;
+        emailLink.textContent = emailUsername + '@' + emailDomain;
+    </script>
 </script>
 
    
