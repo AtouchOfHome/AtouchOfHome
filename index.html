@@ -581,7 +581,7 @@ At The Touch of Home, we welcome pets. When you visit, feel free to inquire with
       </div>
         <div class="add2">
            <img src="./images/mfb.png" alt="">
-       <p ><a href="#" id='emailLink'>Email us</a></p>
+       <p ><a href="#" id='emailLinks'>Email us</a></p>
       
       </div>
         <div class="add2">
@@ -662,8 +662,11 @@ At The Touch of Home, we welcome pets. When you visit, feel free to inquire with
 
         // Generate the email link
         var emailLink = document.getElementById('emailLink');
+          var emailLinks = document.getElementById('emailLinks');
         emailLink.href = 'mailto:' + emailUsername + '@' + emailDomain;
         emailLink.textContent = emailUsername + '@' + emailDomain;
+                emailLinks.href = 'mailto:' + emailUsername + '@' + emailDomain;
+        emailLinks.textContent = emailUsername + '@' + emailDomain;
     </script>
 </script>
 
