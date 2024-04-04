@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>A Touch of Home Updates</title>
+  <link href="http://www.example.com"/>
+  <updated>2024-02-20T08:00:00Z</updated>
+  <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+  <author>
+    <name>A Touch of Home</name>
+  </author>
+  <subtitle>Latest updates from A Touch of Home</subtitle>
+  <entry>
+    <title>New Blog Post: Tips for Creating a Cozy Home</title>
+    <link href="https://www.atouchofhome.careblog/tips-for-creating-a-cozy-home"/>
+    <id>urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6</id>
+    <published>2024-02-20T08:00:00Z</published>
+    <updated>2024-02-20T08:00:00Z</updated>
+    <summary>Check out our latest blog post for tips on creating a cozy home atmosphere.</summary>
+  </entry>
+</feed>
