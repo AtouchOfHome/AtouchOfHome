@@ -3,5 +3,5 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /public/
 
-Sitemap: http://www.atouchofhome/sitemap.xml
+Sitemap: https://www.atouchofhome/sitemap.xml
 
