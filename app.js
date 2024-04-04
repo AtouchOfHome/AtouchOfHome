@@ -174,3 +174,10 @@ window.onscroll = function() {
   // Play the video
   video.play();
 });
+
+// Check if the page returns a 404 error
+if (window.location.href.includes("404")) {
+    // Redirect to the custom error page
+    window.location.href = "404.html";
+}
+
