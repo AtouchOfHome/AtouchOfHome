@@ -1,4 +1,10 @@
-  $(document).ready(function(){
+var url = window.location.href;
+url = url.split('.html')[0];
+//url = url.substring(0, url.lastIndexOf("."));
+window.history.replaceState( null, null, url );
+
+
+$(document).ready(function(){
     $('#toggle').click(function(){
       $('#item').toggle(500)  
     })
@@ -175,10 +181,6 @@ window.onscroll = function() {
   video.play();
 });
 
-var url = window.location.href;
-url = url.split('.html')[0];
-//url = url.substring(0, url.lastIndexOf("."));
-window.history.replaceState( null, null, url );
 
 
 
