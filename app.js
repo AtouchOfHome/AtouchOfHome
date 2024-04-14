@@ -179,27 +179,6 @@ window.onscroll = function() {
 });
 
 
-const slides = [
-   
-    'url("./images/mediums-hot-smiley-people-indoors.jpg")',
-    'url("./images/close-up-woman-posing-chair.jpg")'
-    // Add more image URLs as needed
-];
-
-const slideshow = document.querySelector('.slideshow-background');
-
-let currentSlide = 0;
-
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    slideshow.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), ${slides[currentSlide]}`;
-}
-
-// Initial setup
-nextSlide();
-
-// Start slideshow
-setInterval(nextSlide, 2000); // Change slide every 5 seconds (adjust as needed)
 
 
 
