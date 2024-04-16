@@ -10,7 +10,7 @@ $(document).ready(function() {
   // Apply backstretch plugin to the home section
   $('.home').backstretch(imaged, {
     fade: 750,
-    duration: 2000
+    duration: 4000
   });
 
    $('.home').append('<div class="gradient-overlay"></div>');
