@@ -884,10 +884,10 @@ header .socials a {
     cursor: pointer;
     width: 70px;
     position: fixed;
-    bottom: 10px !important; /* Adjust the distance from the bottom as needed */
+    top: 10px !important; /* Adjust the distance from the bottom as needed */
     right: 10px !important; /* Adjust the distance from the left as needed */
-    z-index: 9999!important; /* Set a high z-index to ensure the icon appears above other elements */
-    animation: rotate 3s linear infinite; /* Rotate animation */
+    z-index: 3!important; /* Set a high z-index to ensure the icon appears above other elements */
+
   }
   .home .fixed-icon img {
     width: 70px !important;
@@ -1035,10 +1035,10 @@ header .socials a {
   .home .fixed-icon {
     cursor: pointer;
     position: fixed;
-    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    top: 20px; /* Adjust the distance from the bottom as needed */
     right: 5px; /* Adjust the distance from the left as needed */
-    z-index: 9999!important; /* Set a high z-index to ensure the icon appears above other elements */
-    animation: rotate 3s linear infinite; /* Rotate animation */
+    z-index: 3!important; /* Set a high z-index to ensure the icon appears above other elements */
+   
   }
   .home .fixed-icon img {
     width: 150px;
