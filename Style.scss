@@ -68,7 +68,7 @@ body, h1 {
     //position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/mediums-hot-smiley-people-indoors.jpg') ;
+    // background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('../images/mediums-hot-smiley-people-indoors.jpg') ;
     background-size: cover;
     background-position: top;
    background-repeat: no-repeat;
@@ -85,11 +85,20 @@ body, h1 {
 //     background-size: cover;
 //     background-position: center;
 // }
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)); /* Adjust the gradient colors and opacity */
+  z-index: 1; /* Ensure overlay appears above background */
 
+}
    .contents{
      display: grid;
   place-items: center;
-     //z-index: 1;
+     z-index: 2;
        
     h1{
         color: white;
@@ -659,6 +668,7 @@ font-weight: 600;
   
     .autoplay{
         margin-top: 40px;
+        z-index: -1;
         .img{
             margin: 0 10px;
              position: relative;
