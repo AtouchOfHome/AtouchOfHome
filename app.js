@@ -4,7 +4,7 @@ $(document).ready(function() {
     "./images/B1.jpg",
     "./images/B2.jpg",
       "./images/B3.jpg",
-    "./images/B4.jpg"
+    "./images/B4r.jpg"
   ];
   
   // Apply backstretch plugin to the home section
