@@ -1,4 +1,20 @@
+$(document).ready(function() {
+  // Array of background images
+  var imaged = [
+    "./images/B1.jpg",
+    "./images/B2.jpg",
+      "./images/B3.jpg",
+    "./images/B4.jpg"
+  ];
+  
+  // Apply backstretch plugin to the home section
+  $('.home').backstretch(imaged, {
+    fade: 750,
+    duration: 2000
+  });
 
+   $('.home').append('<div class="gradient-overlay"></div>');
+});
 
 
 $(document).ready(function(){
