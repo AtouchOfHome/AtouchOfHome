@@ -114,7 +114,7 @@ body, h1 {
     position: fixed;
     bottom: 20px; /* Adjust the distance from the bottom as needed */
     right: 5px; /* Adjust the distance from the left as needed */
-    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    z-index: 99999; /* Set a high z-index to ensure the icon appears above other elements */
     animation: rotate 3s linear infinite; /* Rotate animation */
 
     img{
@@ -1313,7 +1313,7 @@ font-weight: 600;
     position: fixed;
     bottom: 10px!important; /* Adjust the distance from the bottom as needed */
     right: 10px!important; /* Adjust the distance from the left as needed */
-    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    z-index: 99999; /* Set a high z-index to ensure the icon appears above other elements */
     animation: rotate 3s linear infinite; /* Rotate animation */
 
     img{
@@ -1549,7 +1549,7 @@ font-family: 'Open Sans', sans-serif;
     position: fixed;
     bottom: 20px; /* Adjust the distance from the bottom as needed */
     right: 5px; /* Adjust the distance from the left as needed */
-    z-index: 9999; /* Set a high z-index to ensure the icon appears above other elements */
+    z-index: 99999; /* Set a high z-index to ensure the icon appears above other elements */
     animation: rotate 3s linear infinite; /* Rotate animation */
 
     img{
