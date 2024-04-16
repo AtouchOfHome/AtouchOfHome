@@ -884,7 +884,7 @@ header .socials a {
     cursor: pointer;
     width: 70px;
     position: fixed;
-    top: 10px !important; /* Adjust the distance from the bottom as needed */
+    bottom: 10px !important; /* Adjust the distance from the bottom as needed */
     right: 10px !important; /* Adjust the distance from the left as needed */
     z-index: 3!important; /* Set a high z-index to ensure the icon appears above other elements */
 
@@ -1035,7 +1035,7 @@ header .socials a {
   .home .fixed-icon {
     cursor: pointer;
     position: fixed;
-    top: 20px; /* Adjust the distance from the bottom as needed */
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
     right: 5px; /* Adjust the distance from the left as needed */
     z-index: 3!important; /* Set a high z-index to ensure the icon appears above other elements */
    
