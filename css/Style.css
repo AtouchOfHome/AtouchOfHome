@@ -487,13 +487,16 @@ header .socials a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+   align-items: center;
+   justify-content: center;
 }
-.faq .container {
-  display: grid;
-  place-items: center;
-}
+
 .faq .container h1 {
   text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 60px
 }
 .faq .container .freq {
   width: 100%;
@@ -675,13 +678,16 @@ header .socials a {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+     display: flex;
+   align-items: center;
+   justify-content: center;
   }
-  .faq .container {
-    display: grid;
-    place-items: center;
-  }
+
   .faq .container h1 {
     text-align: center;
+       color: #fff;
+            font-weight: 700;
+            font-size: 30px;
   }
   .faq .container .freq {
     width: 100%;
