@@ -483,7 +483,7 @@ header .socials a {
 .faq {
   width: 100%;
   height: 75dvh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/faq.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/FAQ.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -671,7 +671,7 @@ header .socials a {
   .faq {
     width: 100%;
     height: 75dvh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/faq.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/FAQ.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
