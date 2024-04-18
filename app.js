@@ -1,11 +1,13 @@
 $(document).ready(function() {
   // Array of background images
   var imaged = [
-    "./images/B1.jpg",
+    "./images/DE.jpg",
     "./images/B2.jpg",
       "./images/B3.jpg",
     "./images/B4r.jpg",
-    "./images/B5.jpg"
+    "./images/B5.jpg",
+    "./images/ABT2.jpg",
+    "./images/FAQ.jpg"
   ];
   
   // Apply backstretch plugin to the home section
