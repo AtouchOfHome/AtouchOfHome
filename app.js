@@ -5,9 +5,10 @@ $(document).ready(function() {
     "./images/B2.jpg",
       "./images/B3.jpg",
     "./images/B4r.jpg",
-    "./images/B5.jpg",
+    "./images/1SL.jpg",
     "./images/ABT2.jpg",
-    "./images/FAQ.jpg"
+    "./images/FAQ.jpg",
+     "./images/NWS.jpg"
   ];
   
   // Apply backstretch plugin to the home section
