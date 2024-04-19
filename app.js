@@ -8,7 +8,9 @@ $(document).ready(function() {
     "./images/1SL.jpg",
     "./images/ABT2.jpg",
     "./images/FAQ.jpg",
-     "./images/NWS.jpg"
+     "./images/NWS.jpg",
+    "./images/G7.jpg",
+    "./images/G8.jpg"
   ];
   
   // Apply backstretch plugin to the home section
