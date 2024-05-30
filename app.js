@@ -172,7 +172,12 @@ window.onscroll = function() {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-           swal({text: "Message sent!"});
+          Swal.fire({
+                icon: "success",
+                title: "Good job",
+                text: "Your message is sent successfully",
+                 
+                });
         form.reset();
       })
       .catch(error => console.error('Error!', error.message))
@@ -186,7 +191,12 @@ window.onscroll = function() {
     e.preventDefault()
     fetch(scriptURL1, { method: 'POST', body: new FormData(form1)})
       .then(response => {
-           swal({text: "Message sent!"});
+           Swal.fire({
+                icon: "success",
+                title: "Good job",
+                text: "Your data is saved successfully",
+                 
+                });
         form.reset();
       })
       .catch(error => console.error('Error!', error.message))
