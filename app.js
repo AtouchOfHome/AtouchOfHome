@@ -167,12 +167,13 @@ window.onscroll = function() {
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyfSlvcPC4pBvzMHLsjc7IvhTo0D0VA23q5TKwJtQKClVXrlx1Z32bplZeNJQlhpOH0rg/exec'
   const form = document.forms['submit-to-google-sheet']
-
+  const btnrgEL = document.getElementById('btnrg')
   form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
+     btnrgEL.disabled = true
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        form.reset();
+        
           Swal.fire({
                 icon: "success",
                 title: "Thank you",
@@ -181,7 +182,10 @@ window.onscroll = function() {
                 });
         
       })
-      .catch(error => console.error('Error!', error.message))
+        form.reset();
+       btnrgEL.disabled = false
+      .catch(error => console.error('Error!', error.message));
+       btnrgEL.disabled = false
   })
 
 
