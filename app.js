@@ -175,7 +175,7 @@ window.onscroll = function() {
         form.reset();
           Swal.fire({
                 icon: "success",
-                title: "Good job",
+                title: "Thank you",
                 text: "Your message is sent successfully",
                  
                 });
