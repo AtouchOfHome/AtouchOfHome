@@ -172,13 +172,14 @@ window.onscroll = function() {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
+        form.reset();
           Swal.fire({
                 icon: "success",
                 title: "Good job",
                 text: "Your message is sent successfully",
                  
                 });
-        form.reset();
+        
       })
       .catch(error => console.error('Error!', error.message))
   })
