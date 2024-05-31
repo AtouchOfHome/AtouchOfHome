@@ -30,6 +30,13 @@ $(document).ready(function(){
   
 })
 
+$(document).ready(function(){
+    $('#toggles').click(function(){
+      $('#items').toggle(500)  
+    })
+  
+})
+
  function loadContentBasedOnId() {
     let urlParams = new URLSearchParams(window.location.search);
     let currentCardId = urlParams.get('cardId');
