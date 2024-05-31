@@ -180,6 +180,7 @@ form.addEventListener('submit', e => {
         icon: "success",
         title: "Good job",
         text: "Your data is saved successfully",
+        padding: 10px,
       })
       form.reset()
       btnrgEL.style.display = "block"
