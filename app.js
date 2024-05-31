@@ -179,7 +179,7 @@ form.addEventListener('submit', e => {
       Swal.fire({
         icon: "success",
         title: "Good job",
-        text: "Your data is saved successfully",
+        text: "Your message has been received",
         padding: 10px,
       })
       form.reset()
