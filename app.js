@@ -168,25 +168,31 @@ window.onscroll = function() {
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyfSlvcPC4pBvzMHLsjc7IvhTo0D0VA23q5TKwJtQKClVXrlx1Z32bplZeNJQlhpOH0rg/exec'
   const form = document.forms['submit-to-google-sheet']
   const btnrgEL = document.getElementById('btnrg')
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-     btnrgEL.disabled = true
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        
-          Swal.fire({
-                icon: "success",
-                title: "Thank you",
-                text: "Your message is sent successfully",
-                 
-                });
-        
+form.addEventListener('submit', e => {
+  e.preventDefault()
+
+  // Disable the submit button to prevent multiple clicks
+  btnrgEL.disabled = true
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      Swal.fire({
+        icon: "success",
+        title: "Good job",
+        text: "Your data is saved successfully",
       })
-        form.reset();
-       btnrgEL.disabled = false
-      .catch(error => console.error('Error!', error.message));
-       btnrgEL.disabled = false
-  })
+      form.reset()
+      btnrgEL.style.display = "block"
+      // Re-enable the submit button after form reset
+      btnrgEL.disabled = false
+    })
+    .catch(error => {
+      console.error('Error!', error.message)
+      // Re-enable the submit button in case of an error
+      btnrgEL.disabled = false
+    })
+})
+
 
 
   const scriptURL1 = 'https://script.google.com/macros/s/AKfycby4A0o6UgUEABN2szICN4OUI0p52sjRu27M7YqZeXRu1_2XfZSW4CZyb9GTkbnc-keQ/exec';
