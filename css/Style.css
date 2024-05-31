@@ -11,9 +11,7 @@ body, h1 {
   padding: 0;
 }
 
-.ife{
-  font-size: 11px!important;
-}
+
 
 .navbar {
   position: fixed;
@@ -804,9 +802,9 @@ header .socials a {
     color: #fff;
     margin-top: 40px;
   }
-  .foot p {
+  .foot p, .foot .ife {
     text-align: center;
-    font-size: 10px;
+    font-size: 10px!important;
     color: #fff;
   }
   .foot .menu h4, .foot .menu .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .foot .menu h6 {
