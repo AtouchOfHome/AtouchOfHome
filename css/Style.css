@@ -11,6 +11,10 @@ body, h1 {
   padding: 0;
 }
 
+.ife{
+  font-size: 11px;
+}
+
 .navbar {
   position: fixed;
   padding: 10px;
