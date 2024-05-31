@@ -176,12 +176,8 @@ form.addEventListener('submit', e => {
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-      Swal.fire({
-        icon: "success",
-        title: "Good job",
-        text: "Your message has been received",
-        
-      })
+     Swal.fire("Message sent successfully");
+
       form.reset()
       btnrgEL.style.display = "block"
       // Re-enable the submit button after form reset
@@ -203,12 +199,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL1, { method: 'POST', body: new FormData(form1)})
       .then(response => {
-           Swal.fire({
-                icon: "success",
-                title: "Good job",
-                text: "Your data is saved successfully",
-                 
-                });
+           Swal.fire("Message sent successfully");
         form.reset();
       })
       .catch(error => console.error('Error!', error.message))
