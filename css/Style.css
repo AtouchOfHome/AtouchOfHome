@@ -1219,3 +1219,15 @@ header .socials a {
 }
 
 }
+
+
+.trow{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.tname{
+    width: 48%;
+    margin: 0 5px;
+}
