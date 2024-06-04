@@ -183,7 +183,7 @@ form.addEventListener('submit', e => {
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-     Swal.fire("Message sent successfully");
+    
 
       form.reset()
       btnrgEL.style.display = "block"
@@ -328,3 +328,41 @@ tourEl.addEventListener('submit', function(e) {
 });
 
 
+const cformEl = document.getElementById('cform');
+const touresult2 = document.getElementById('tourresult2');
+
+cformEl.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(cformEl);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  touresult2.innerHTML = ""
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                touresult2.innerHTML = json.message;
+            } else {
+                console.log(response);
+                touresult2.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            touresult2.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            tourEl.reset();
+            setTimeout(() => {
+                touresult2.style.display = "none";
+            }, 3000);
+        });
+});
