@@ -656,7 +656,9 @@ At The Touch of Home, we welcome pets. When you visit, feel free to inquire with
           <img src="./images/CS.jpg" alt="" style="width: 100%" class="img-fluid w3-image">
         </div>
         <div class="col-md-12 col-lg-6 format">
-          <form action="" method="post" name="submit-to-google-sheet">
+          <form action="" method="post" id="cform" name="submit-to-google-sheet">
+                <input type="hidden" name="subject" value="Contact Form">
+             <input type="hidden" name="access_key" value="ded0660d-774f-4921-a342-8822a0038176">
             <div class="namedetails">
               <div class="mb-2 name">
                <label for="exampleFormControlInput1" class="form-label">First name</label>
@@ -699,7 +701,7 @@ At The Touch of Home, we welcome pets. When you visit, feel free to inquire with
   <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 <button class="btn btn-success" id="btnrg">Send Message</button>
-
+<div id="tourresult2"></div>
   </form>
 
         </div>
