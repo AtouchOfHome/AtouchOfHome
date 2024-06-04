@@ -218,6 +218,63 @@
     </div>
 
 
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" >
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="./images/logo.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" id="tour" class="forms" action="" method="post" name="submit-to-google-sheet1">
+        <input type="hidden" name="subject" value="Schedule a Tour">
+                  <input type="hidden" name="access_key" value="ded0660d-774f-4921-a342-8822a0038176">
+        <div class="w3-section">
+          <div class="trow">
+            <div class="tname">
+             <label><b>First Name</b></label>
+          <input class="w3-input w3-border" name="First Name" type="text" placeholder="Please enter your name" required>
+            </div>
+            <div class="tname">
+             <label><b>Last Name</b></label>
+          <input class="w3-input w3-border" name="Last Name" type="text" placeholder="Please enter your name" required>
+            </div>
+       
+          </div>
+
+          <div class="trow">
+            <div class="tname">
+          <label><b>Location</b></label>
+          <input class="w3-input w3-border" name="Location" type="text" placeholder="Please enter your location"  required>
+            </div>
+            <div class="tname">
+             <label><b>Date</b></label>
+          <input class="w3-input w3-border" type="date" name="Date" placeholder="Enter Password" required>
+            </div>
+       
+          </div>
+          <div class="trow">
+            <div class="tname">
+          <label><b>Email</b></label>
+          <input class="w3-input w3-border" name="Email" type="Email" placeholder="Please enter your location"  required>
+            </div>
+            <div class="tname">
+             <label><b>Phone Number</b></label>
+          <input class="w3-input w3-border" type="phone" name="Phone Number" placeholder="Enter Password" required>
+            </div>
+       
+          </div>
+          
+          <button class="w3-button w3-block w3-green w3-margin-bottom w3-section w3-padding" type="submit">Send</button>
+           <div id="tourresult"></div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
     
 
 <section class="faq">
