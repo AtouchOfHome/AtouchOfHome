@@ -287,3 +287,44 @@ formEl.addEventListener('submit', function(e) {
 
 
 
+
+const tourEl = document.getElementById('tour');
+const touresult = document.getElementById('tourresult');
+
+tourEl.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(tourEl);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  touresult.innerHTML = ""
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                touresult.innerHTML = json.message;
+            } else {
+                console.log(response);
+                touresult.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            touresult.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            tourEl.reset();
+            setTimeout(() => {
+                touresult.style.display = "none";
+            }, 3000);
+        });
+});
+
+
