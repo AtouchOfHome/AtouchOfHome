@@ -222,6 +222,68 @@ form.addEventListener('submit', e => {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const popup = document.getElementById("popup");
+    const closeBtn = document.getElementById("close-btn");
+
+    // Show the pop-up when the page loads
+    popup.style.display = "flex";
+
+    // Close the pop-up when the close button is clicked
+    closeBtn.addEventListener("click", function() {
+        popup.style.display = "none";
+    });
+
+    // Optionally, close the pop-up when the user clicks outside of it
+    window.addEventListener("click", function(event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+
+
+
+
+
+const formEl = document.getElementById('offer-form');
+const result = document.getElementById('result');
+
+formEl.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(formEl);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            formEl.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
 
 
 
