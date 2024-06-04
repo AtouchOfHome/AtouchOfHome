@@ -206,7 +206,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL1, { method: 'POST', body: new FormData(form1)})
       .then(response => {
-           Swal.fire("Message sent successfully");
+          
         form.reset();
       })
       .catch(error => console.error('Error!', error.message))
