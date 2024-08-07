@@ -1,5 +1,6 @@
+//this code is controlling the slideshow on the home page
 $(document).ready(function() {
-  // Array of background images
+  //  background images
   var imaged = [
     "./images/DE.jpg",
     "./images/B2.jpg",
@@ -13,7 +14,7 @@ $(document).ready(function() {
     "./images/G8.jpg"
   ];
   
-  // Apply backstretch plugin to the home section
+  //  backstretch plugin to the home section
   $('.home').backstretch(imaged, {
     fade: 750,
     duration: 4000
@@ -23,6 +24,8 @@ $(document).ready(function() {
 });
 
 
+
+//this code is controlling the drop dropdown in the navbar
 $(document).ready(function(){
     $('#toggle').click(function(){
       $('#item').toggle(500)  
@@ -36,6 +39,9 @@ $(document).ready(function(){
     })
   
 })
+
+
+//this code is responsible for the dynamically loading of cards to the details page
 
  function loadContentBasedOnId() {
     let urlParams = new URLSearchParams(window.location.search);
@@ -106,6 +112,8 @@ $(document).ready(function(){
 
 
 
+//this code is responsible for the slidshow in the gallery
+
 $(document).ready(function(){
  
  $('.autoplay').slick({
@@ -152,26 +160,28 @@ $(document).ready(function(){
 });
 
 
-let prevScrollPos = window.scrollY;
+// let prevScrollPos = window.scrollY;
 
-window.onscroll = function() {
-  const currentScrollPos = window.scrollY;
-  const isHomePage = window.location.pathname === ".home"; // Adjust the home page path
+// window.onscroll = function() {
+//   const currentScrollPos = window.scrollY;
+//   const isHomePage = window.location.pathname === ".home"; // Adjust the home page path
 
-  if (isHomePage) {
-    if (prevScrollPos > currentScrollPos) {
-      document.getElementById("site-header").style.top = "0";
-      document.getElementById("site-navbar").style.top = "60px";
-    } else {
-      document.getElementById("site-header").style.top = "-60px";
-      document.getElementById("site-navbar").style.top = "0";
-    }
-  }
+//   if (isHomePage) {
+//     if (prevScrollPos > currentScrollPos) {
+//       document.getElementById("site-header").style.top = "0";
+//       document.getElementById("site-navbar").style.top = "60px";
+//     } else {
+//       document.getElementById("site-header").style.top = "-60px";
+//       document.getElementById("site-navbar").style.top = "0";
+//     }
+//   }
 
-  prevScrollPos = currentScrollPos;
-};
+//   prevScrollPos = currentScrollPos;
+// };
 
 
+
+//this code is responsible for the transmiting of formdata to googlesheets
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyfSlvcPC4pBvzMHLsjc7IvhTo0D0VA23q5TKwJtQKClVXrlx1Z32bplZeNJQlhpOH0rg/exec'
   const form = document.forms['submit-to-google-sheet']
   const btnrgEL = document.getElementById('btnrg')
@@ -198,7 +208,7 @@ form.addEventListener('submit', e => {
 })
 
 
-
+//this code is responsible for the transmitting of form data into google sheets
   const scriptURL1 = 'https://script.google.com/macros/s/AKfycby4A0o6UgUEABN2szICN4OUI0p52sjRu27M7YqZeXRu1_2XfZSW4CZyb9GTkbnc-keQ/exec';
   const form1 = document.forms['submit-to-google-sheet1'];
 
@@ -212,16 +222,16 @@ form.addEventListener('submit', e => {
       .catch(error => console.error('Error!', error.message))
   })
 
-  window.addEventListener('DOMContentLoaded', (event) => {
-  // Get a reference to the video element
-  const video = document.getElementById('myVideo');
+//   window.addEventListener('DOMContentLoaded', (event) => {
+//   // Get a reference to the video element
+//   const video = document.getElementById('myVideo');
   
-  // Play the video
-  video.play();
-});
+//   // Play the video
+//   video.play();
+// });
 
 
-
+//this code is responsible for the pop-up on the page anytime the page loads
 document.addEventListener("DOMContentLoaded", function() {
     const popup = document.getElementById("popup");
     const closeBtn = document.getElementById("close-btn");
@@ -244,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+//this code is responsible for transmitting form data to email
 
 const formEl = document.getElementById('offer-form');
 const result = document.getElementById('result');
@@ -286,7 +296,7 @@ formEl.addEventListener('submit', function(e) {
 });
 
 
-
+//this code is responsible for transmitting form data to email
 
 const tourEl = document.getElementById('tour');
 const touresult = document.getElementById('tourresult');
@@ -327,7 +337,7 @@ tourEl.addEventListener('submit', function(e) {
         });
 });
 
-
+//this code is responsible for transmitting form data to email
 const cformEl = document.getElementById('cform');
 const touresult2 = document.getElementById('tourresult2');
 
