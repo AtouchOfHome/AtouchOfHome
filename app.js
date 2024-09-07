@@ -376,3 +376,19 @@ cformEl.addEventListener('submit', function(e) {
             }, 3000);
         });
 });
+
+
+
+ function updateMonth() {
+      const monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+
+      const currentDate = new Date();
+      const currentMonth = monthNames[currentDate.getMonth()]; // Get the current month
+      document.getElementById('month').textContent = currentMonth; // Update the page with the current month
+    }
+
+    // Call the function when the page loads
+    window.onload = updateMonth;
