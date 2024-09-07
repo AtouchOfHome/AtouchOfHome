@@ -379,7 +379,8 @@ cformEl.addEventListener('submit', function(e) {
 
 
 
- function updateMonth() {
+
+function updateMonth() {
       const monthNames = [
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
@@ -391,4 +392,26 @@ cformEl.addEventListener('submit', function(e) {
     }
 
     // Call the function when the page loads
-    window.onload = updateMonth;
+   
+
+
+      function getLastDayOfMonth(year, month) {
+      // Set the day to 0 of the next month to get the last day of the current month
+      return new Date(year, month + 1, 0).getDate();
+    }
+
+    function updateLastDay() {
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      const currentMonth = currentDate.getMonth(); // 0 for January, 11 for December
+
+      const lastDay = getLastDayOfMonth(currentYear, currentMonth);
+      document.getElementById('last-day').textContent = `${lastDay}th`;
+    }
+
+    // Call the function when the page loads
+    window.onload = () => {
+        updateLastDay();
+         updateMonth();
+    } 
+     
