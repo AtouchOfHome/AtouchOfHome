@@ -1,4 +1,4 @@
- AOS.init();
+
 
 //this code is controlling the slideshow on the home page
 $(document).ready(function() {
