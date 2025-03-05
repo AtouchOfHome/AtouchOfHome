@@ -9,9 +9,9 @@
     animation-fill-mode: both;
 }
 
-.add p{
+.add p, .add2 p{
   padding: 0!important;
-  margin-top: 5px!important;
+  margin-top: 3px!important;
 }
 
 .hu__hu__ { animation: hu__hu__ infinite 3s ease-in-out }
