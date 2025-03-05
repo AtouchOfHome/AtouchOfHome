@@ -11,7 +11,11 @@ body, h1 {
   padding: 0;
 }
 
-
+.add p{
+  padding: 0;
+  margin: 0;
+}
+  
 
 .navbar {
   position: fixed;
