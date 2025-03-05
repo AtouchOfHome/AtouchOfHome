@@ -15,8 +15,8 @@
 }
 
 .add .add2{
-  display: flex;
-  align-items: center;
+  display: flex!important;
+  align-items: center!important;
 }
 
 .hu__hu__ { animation: hu__hu__ infinite 3s ease-in-out }
