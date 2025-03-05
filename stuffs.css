@@ -9,7 +9,10 @@
     animation-fill-mode: both;
 }
 
-
+.add p{
+  padding: 0!important;
+  margin-top: 5px!important;
+}
 
 .hu__hu__ { animation: hu__hu__ infinite 3s ease-in-out }
 @keyframes hu__hu__ {
