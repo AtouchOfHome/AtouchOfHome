@@ -906,6 +906,9 @@ header .socials a {
   .home .fixed-icon img {
     width: 70px !important;
   }
+  .home .fixed-icon .senior {
+    width: 70px !important;
+  }
   .home2 {
     width: 100%;
     padding: 80px 3px;
@@ -1057,7 +1060,7 @@ header .socials a {
   .home .fixed-icon img {
     width: 150px;
   }
-  .home .fixed-icon senior {
+  .home .fixed-icon .senior {
     width: 120px;
   }
   .wrate .flip-card {
