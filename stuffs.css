@@ -200,6 +200,11 @@
       text-align: center;
     }
 
+
+.touch img{
+  margin-bottom: 30px;
+}
+
     form label{
         font-size: 13px;
        font-weight: 600;
@@ -323,4 +328,7 @@
     }
 
 
+.touch img{
+  margin-bottom: 30px;
+}
 }
