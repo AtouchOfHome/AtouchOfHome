@@ -641,7 +641,7 @@ header .socials a {
   }
   
   .touch img{
-    margin: 20px;
+    margin-bottom: 30px;
   }
   .dash .container-fluid {
     flex-direction: column;
