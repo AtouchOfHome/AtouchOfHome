@@ -178,7 +178,10 @@
             flex-basis: 100%;
         }
 
-        
+        .ani {
+    margin: 0 auto;
+    display: block;
+}
     .col-md-12.col-lg-6.col-sm-12.tte h1, p {
     text-align: center;
 }
@@ -302,6 +305,11 @@
         align-items: center;
   
       }
+
+  .ani {
+    margin: 0 auto;
+    display: block;
+}
 
         .name{
             width: 100%;
