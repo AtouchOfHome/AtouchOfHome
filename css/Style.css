@@ -901,7 +901,9 @@ header .socials a {
   bottom: 20px; /* Adjust the bottom position as needed */
   right: 20px; /* Adjust the right position as needed */
   z-index: 3; /* Ensure icon appears above overlay and content */
-
+   display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .home .fixed-icon img {
     width: 70px !important;
