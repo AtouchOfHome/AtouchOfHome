@@ -639,6 +639,10 @@ header .socials a {
   .dash {
     width: 100%;
   }
+  
+  .touch img{
+    margin: 20px;
+  }
   .dash .container-fluid {
     flex-direction: column;
     align-items: center;
