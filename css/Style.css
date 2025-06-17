@@ -1057,6 +1057,9 @@ header .socials a {
   .home .fixed-icon img {
     width: 150px;
   }
+  .home .fixed-icon senior {
+    width: 120px;
+  }
   .wrate .flip-card {
     margin: 0 auto;
   }
