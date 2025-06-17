@@ -94,11 +94,11 @@ body, h1 {
   position: fixed;
   bottom: 20px; /* Adjust the distance from the bottom as needed */
   right: 5px; /* Adjust the distance from the left as needed */
-  z-index: 9999!important; /* Set a high z-index to ensure the icon appears above other elements */
+  z-index: 99999!important; /* Set a high z-index to ensure the icon appears above other elements */
   animation: rotate 3s linear infinite; /* Rotate animation */
 }
 .home .fixed-icon img {
-  width: 80px;
+  width: 90px;
 }
 .home .fixed-icon .senior {
   width: 120px;
