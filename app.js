@@ -4,16 +4,10 @@
 $(document).ready(function() {
   //  background images
   var imaged = [
-    "./images/DE.jpg",
-    "./images/B2.jpg",
-      "./images/B3.jpg",
-    "./images/B4r.jpg",
-    "./images/1SL.jpg",
-    "./images/ABT2.jpg",
-    "./images/FAQ.jpg",
-     "./images/NWS.jpg",
-    "./images/G7.jpg",
-    "./images/G8.jpg"
+    "./images/n6.jpg",
+    "./images/n2.jpg",
+      "./images/n5.jpg",
+    
   ];
   
   //  backstretch plugin to the home section
