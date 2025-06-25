@@ -60,17 +60,17 @@ $(document).ready(function(){
     switch (currentCardId) {
       case 'card1':
       cardContent = "<h1 class='mb-3'>Assisted Living: Enhancing Independence, Ensuring Support</h1><p>Assisted living is a specialized residential option designed for seniors who seek a balance between independence and the need for personalized assistance. In these communities, older adults enjoy a comfortable and supportive living environment tailored to their individual needs and preferences.</p> <h4>Key Features:</h4>  <p>Personalized Care: Assisted living facilities provide a range of services to support residents with daily activities, such as bathing, dressing, medication management, and more. Care plans are customized to meet each resident's unique requirements.</p><p>Nutritious Dining: Many assisted living communities offer dining services with nutritious and well-balanced meals. Special dietary needs and preferences are often accommodated.</p>";
-      imageCont = "<img src='./images/1AL.jpg' alt='...'>"
+      imageCont = "<img src='./images/n11.jpg' alt='...'>"
     
 
         break;
       case 'card2':
         cardContent = "<h1 class='mb-3'>Senior Living</h1><p>Welcome to A Touch of Home, where a vibrant and fulfilling lifestyle awaits. Our community is dedicated to providing a supportive and enriching environment for older adults seeking a place to call home. Embrace a new chapter of life surrounded by like-minded individuals, engaging activities, and personalized care.</p><p>At A Touch of Home, we prioritize independence, well-being, and a sense of belonging. Our range of housing options, from independent living to assisted living and memory care, ensures that each resident receives the level of support they require. Enjoy a community where friendships flourish, and every day brings opportunities for learning, socializing, and creating cherished memories.</p><p>Our dedicated team is committed to enhancing the quality of life for our residents, fostering a welcoming atmosphere, and promoting a sense of community. Discover a place where comfort meets convenience, and where every resident is valued as a unique individual with a lifetime of experiences to share.</p>";
-        imageCont = "<img src='./images/1SL.jpg' alt='...'>"
+        imageCont = "<img src='./images/n1.jpg' alt='...'>"
         break;
       default:
         cardContent = "<h2 class='mb-3'>Memory Care</h2><p>Welcome to our Memory Care Community, a place where compassion meets expertise to provide specialized care for individuals facing memory-related challenges. Our dedicated team understands the unique needs of those navigating Alzheimer's disease and dementia, and we are committed to creating a supportive and nurturing environment.</p><p>In our Memory Care Community, we prioritize the well-being and dignity of each resident. Our carefully designed living spaces and programs are tailored to promote a sense of familiarity, security, and comfort. With a focus on individualized care plans, we aim to enhance the quality of life for our residents while providing support for their cognitive and emotional needs.</p><p>Our trained and compassionate staff members are available around the clock, ensuring a safe and engaging atmosphere. We encourage social interaction, cognitive stimulation, and meaningful activities to foster a sense of purpose and connection. Families can have peace of mind knowing that their loved ones are receiving specialized care in an environment that values dignity and respect.</p>";
-      imageCont = "<img src='./images/1ML.jpg' alt='...'>"
+      imageCont = "<img src='./images/n4.jpg' alt='...'>"
     }
 
     // Set the innerHTML of the content container with the loaded content
