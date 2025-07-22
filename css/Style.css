@@ -1117,7 +1117,7 @@ header .socials a {
 }/*# sourceMappingURL=Style.css.map */
 
 /*summer form submission*/
-.popup {
+/* .popup {
     display: none;
     position: fixed;
     top: 0;
@@ -1174,8 +1174,36 @@ header .socials a {
     display: block;
      font-size: 12px;
 }
+ */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.popup-content {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
 
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 .firstrow{
     display: flex;
@@ -1195,19 +1223,19 @@ header .socials a {
 
 
 
-.popup-form{
+/* .popup-form{
     width: 50%;
 }
-
+ */
 #offer-form{
     margin-top: 10px;
 }
 
 @media  (max-width: 600px) {
     
-.popup-form{
+/* .popup-form{
     width: 100%;
-}
+} */
 .firstrow .first{
     width: 48%;
 }
@@ -1222,9 +1250,9 @@ header .socials a {
 }
 @media  (max-width: 1050px) {
     
-.popup-form{
+/* .popup-form{
     width: 100%;
-}
+} */
 .firstrow .first{
     width: 48%;
 }
