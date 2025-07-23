@@ -430,6 +430,8 @@
     @media (max-width: 768px) {
       .contained {
         grid-template-columns: 1fr;
+        height: 100vh;
+        overflow-y: scroll;
       }
 
         .right .ads{
@@ -442,6 +444,10 @@
       margin: 0 0 10px;
       font-weight: 700;
     }
+
+      .left p{
+        text-align: left!important;
+      }
     }
 
 
