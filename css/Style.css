@@ -1201,8 +1201,9 @@ header .socials a {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 24px;
+  font-size: 33px;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .firstrow{
