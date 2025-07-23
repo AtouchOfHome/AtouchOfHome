@@ -398,6 +398,7 @@
       list-style-type: none;
       padding: 0;
       line-height: 1.5;
+      
     }
 
     .contact div {
@@ -414,6 +415,9 @@
       margin-top: 10px;
     }
 
+    .ad div{
+      margin: 0 5px;
+    }
 
     .highlight {
       font-weight: bold;
@@ -422,7 +426,6 @@
 
     .right .ads{
       width: 100%;
-
       height: auto;
       border-radius: 10px;
     }
@@ -440,7 +443,7 @@
       border-radius: 10px;
     }
        .left h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 0 0 10px;
       font-weight: 700;
     }
@@ -448,6 +451,9 @@
       .left p{
         text-align: left!important;
       }
+       .services ul{
+         font-size: 13px;
+       }
     }
 
 
