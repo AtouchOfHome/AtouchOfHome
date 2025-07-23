@@ -417,6 +417,7 @@
 
     .ad div{
       margin: 0 5px;
+    
     }
 
     .highlight {
@@ -446,6 +447,12 @@
       font-size: 2rem;
       margin: 0 0 10px;
       font-weight: 700;
+    }
+
+      
+    .ad div{
+      margin: 0 5px;
+      font-size: 12px;
     }
 
       .left p{
