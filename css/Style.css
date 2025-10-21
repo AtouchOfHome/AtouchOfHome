@@ -131,7 +131,7 @@ header .address img {
 }
 header .address p {
   font-size: 13px;
-  margin: 0;
+  margin: 0 3px;
   color: #fff;
 }
 header .address p a {
