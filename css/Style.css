@@ -782,8 +782,8 @@ header .socials a {
   }
   .foot .container .row .add2 p {
     color: #fff;
-    margin: 0;
-    font-size: 10px;
+    margin: 0 3px;
+    font-size: 13px;
   }
   .foot .container .row .add2 p a {
     text-decoration: none;
