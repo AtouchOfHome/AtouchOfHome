@@ -769,8 +769,8 @@ header .socials a {
   }
   .foot .container .row .add p {
     color: #fff;
-    margin: 0;
-    font-size: 12px;
+    margin: 0 3px;
+    font-size: 13px;
   }
   .foot .container .row .add2 {
     display: flex;
