@@ -758,7 +758,7 @@ header .socials a {
     padding: 30px 16px;
   }
   .foot p {
-    font-size: 13px;
+    font-size: 13px!important;
   }
   .foot .container .row .add {
     display: flex;
@@ -782,8 +782,8 @@ header .socials a {
   }
   .foot .container .row .add2 p {
     color: #fff;
-    margin: 0 3px;
-    font-size: 13px;
+    margin: 0 3px!important;
+    font-size: 13px!important;
   }
   .foot .container .row .add2 p a {
     text-decoration: none;
@@ -814,7 +814,7 @@ header .socials a {
   }
   .foot p, .foot .ife {
     text-align: center;
-    font-size: 10px!important;
+    font-size: 13px!important;
     color: #fff;
   }
   .foot .menu h4, .foot .menu .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .foot .menu h6 {
@@ -824,7 +824,7 @@ header .socials a {
     display: block;
     color: #fff;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
   }
   .extras {
     width: 100%;
