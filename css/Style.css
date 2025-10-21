@@ -537,7 +537,7 @@ header .socials a {
 .foot .container .row .add p {
   color: #fff;
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 .foot .container .row .add2 {
   display: flex;
@@ -572,13 +572,13 @@ header .socials a {
 }
 .foot h3 {
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   color: #fff;
   margin-top: 40px;
 }
 .foot .ife {
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   color: #fff;
 }
 .foot .menu h4, .foot .menu .dash .container-fluid .dashs h6, .dash .container-fluid .dashs .foot .menu h6 {
@@ -758,7 +758,7 @@ header .socials a {
     padding: 30px 16px;
   }
   .foot p {
-    font-size: 7px;
+    font-size: 13px;
   }
   .foot .container .row .add {
     display: flex;
