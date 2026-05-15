@@ -1015,6 +1015,10 @@ header .socials a {
   .wrate .flip-card {
     margin: 10px auto;
   }
+
+  .info h1{
+    text-aligh: center;
+    font-size: 25px;
 }
 @media screen and (max-width: 768px) {
  .home {
